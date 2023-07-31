@@ -1,9 +1,9 @@
-import Logo from "../../assets/logo"
+import FooterLogo from "../../assets/footerlogo"
 
 function Footer() {
    return(
     <div className="footer">
-      <Logo className="footer-logo"/>
+         <FooterLogo />
       <h1 className="footer-title">© 2020 All right reserved</h1>
    </div>
    )
