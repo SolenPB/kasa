@@ -8,6 +8,16 @@
 
 .nav-link {
   color: #ff6060;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-link {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
