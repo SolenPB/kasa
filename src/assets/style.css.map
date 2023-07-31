@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["SCSS/Base/_background.scss","SCSS/Base/_font.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;EACI","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["SCSS/Base/_background.scss","SCSS/Base/_font.scss","SCSS/Base/_color.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;EACI;;;ACDJ;EACI","file":"style.css"}
