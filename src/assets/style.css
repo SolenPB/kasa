@@ -7,6 +7,10 @@
 }
 
 .nav-link {
+  font-size: 18px;
+}
+
+.nav-link {
   color: #ff6060;
   text-decoration: none;
 }
@@ -17,7 +21,12 @@
   align-items: center;
 }
 .header .nav-link {
-  margin-left: 15px;
+  padding-left: 15px;
+}
+
+.sea {
+  width: 1240px;
+  height: 223px;
 }
 
 /*# sourceMappingURL=style.css.map */

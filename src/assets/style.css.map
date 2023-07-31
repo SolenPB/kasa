@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["SCSS/Base/_background.scss","SCSS/Base/_font.scss","SCSS/Base/_color.scss","SCSS/Base/_display.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;EACI;;;ACDJ;EACI;EACA;;;ACFJ;EACI;EACA;EACA;;AACA;EACI","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["SCSS/Base/_background.scss","SCSS/Base/_font.scss","SCSS/Base/_color.scss","SCSS/Base/_display.scss","SCSS/Base/_size.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;EACI;;;AAEJ;EACI;;;ACJJ;EACI;EACA;;;ACFJ;EACI;EACA;EACA;;AACA;EACI;;;ACLR;EACI;EACA","file":"style.css"}
