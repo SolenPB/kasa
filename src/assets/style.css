@@ -2,6 +2,10 @@
   background-color: red;
 }
 
+.footer {
+  background-color: black;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -20,6 +24,10 @@
 }
 
 .title-sea {
+  color: white;
+}
+
+.footer-title {
   color: white;
 }
 
@@ -45,6 +53,13 @@
 .title-gallery .sea {
   position: absolute;
   z-index: -15;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-gallery {

@@ -2,9 +2,9 @@ import Logo from "../../assets/logo"
 
 function Footer() {
    return(
-    <div>
-      <Logo />
-      <h1>All right reserved</h1>
+    <div className="footer">
+      <Logo className="footer-logo"/>
+      <h1 className="footer-title">© 2020 All right reserved</h1>
    </div>
    )
 }
