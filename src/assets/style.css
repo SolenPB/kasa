@@ -19,6 +19,10 @@
   text-decoration: none;
 }
 
+.title-sea {
+  color: white;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -30,12 +34,25 @@
 
 .title-gallery {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  border-radius: 25%;
+}
+.title-gallery .title-sea {
+  position: relative;
+  z-index: 15;
+}
+.title-gallery .sea {
+  position: absolute;
+  z-index: -15;
 }
 
-.sea {
+.title-gallery {
   width: 1240px;
+  height: 223px;
+}
+.title-gallery .sea {
+  width: 1000px;
   height: 223px;
 }
 

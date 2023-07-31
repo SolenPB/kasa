@@ -8,7 +8,16 @@
 }
 .title-gallery {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    border-radius: 25%;
+    .title-sea {
+        position: relative;
+        z-index: +15;
+    }
+    .sea {
+        position: absolute;
+        z-index: -15;
+    }
 }
 
