@@ -15,7 +15,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 5px solid red;
     border-radius: 25px;
     margin-bottom: 40px;
     .title-sea {
@@ -26,9 +25,11 @@ body {
         z-index: +15; 
     }
     .sea{
+        border-radius: 25px;
         position: absolute;
-        object-fit: none;
+        object-fit: cover;
         z-index: -20;
+        filter: brightness(0.7);
     }
 }
 .gallery {
@@ -41,6 +42,7 @@ body {
     .gallery-cards {
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
         border: 1px solid #ff6060;
         border-radius: 15px;
         padding: 15px;
