@@ -3,7 +3,7 @@
 }
 
 .gallery {
-  background-color: grey;
+  background-color: #f6f6f6;
 }
 
 .gallery-cards {
@@ -88,6 +88,7 @@
   display: flex;
   flex-direction: column;
   border: 5px solid blue;
+  border-radius: 25px;
   padding: 15px;
 }
 
