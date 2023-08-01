@@ -10,13 +10,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25%;
+    border: 5px solid red;
+    border-radius: 25px;
     .title-sea {
         position: relative;
+        left: 20px;
+        text-align: center;
         z-index: +15;
     }
     .sea {
+        object-fit: cover;
         position: absolute;
+        top: -663px;
+        left: 100px;
         z-index: -15;
     }
 }

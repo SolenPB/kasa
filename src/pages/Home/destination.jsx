@@ -8,7 +8,11 @@ function Destination() {
 })
 .catch();
 
-return(<Card label='essai' picture='#' title='bonjour' />)
+return(
+    <div className="gallery">
+        <Card label='essai' picture='#' title='bonjour' />
+    </div>
+)
 }
 
 export default Destination
