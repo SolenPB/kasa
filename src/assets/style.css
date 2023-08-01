@@ -46,10 +46,15 @@
   color: white;
 }
 
+body {
+  display: flex;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 .header .nav-link {
   padding-left: 15px;
@@ -59,37 +64,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border: 5px solid red;
   border-radius: 25px;
+  margin-bottom: 40px;
 }
 .title-gallery .title-sea {
   position: relative;
-  top: 70px;
+  top: 40px;
   left: 20px;
   text-align: center;
   z-index: 15;
 }
 .title-gallery .sea {
-  object-fit: cover;
   position: absolute;
-  top: -663px;
-  left: 100px;
-  z-index: -15;
+  object-fit: none;
+  z-index: -20;
 }
 
 .gallery {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
   border: 5px solid red;
   border-radius: 25px;
+  margin-bottom: 40px;
 }
 .gallery .gallery-cards {
   display: flex;
   flex-direction: column;
-  border: 5px solid blue;
-  border-radius: 25px;
+  border: 1px solid #ff6060;
+  border-radius: 15px;
   padding: 15px;
+}
+.gallery .place1 {
+  display: flex;
+  justify-content: space-around;
+}
+.gallery .place2 {
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer {
@@ -123,13 +137,13 @@
   height: 829px;
 }
 .gallery .gallery-cards {
-  width: 50%;
-  height: 40%;
+  width: 250px;
+  height: 250px;
 }
 
 .footer {
-  width: 100%;
-  height: 50%;
+  width: 1440px;
+  height: 209px;
 }
 
 /*# sourceMappingURL=style.css.map */

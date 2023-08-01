@@ -1,6 +1,6 @@
 function Card(props) {
     return(
-   <div className="gallery-cards">
+   <div className="gallery-cards" href="#">
             <span>{props.label}</span>
             <img src={props.picture} alt="logement" />
             <span>{props.title}</span>

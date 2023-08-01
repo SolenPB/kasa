@@ -10,12 +10,16 @@ function Destination() {
 
 return(
     <div className="gallery">
-        <Card label='essai' picture='#' title='bonjour' />
-        <Card label='essai' picture='#' title='bonjour' />
-        <Card label='essai' picture='#' title='bonjour' />
-        <Card label='essai' picture='#' title='bonjour' />
-        <Card label='essai' picture='#' title='bonjour' />
-        <Card label='essai' picture='#' title='bonjour' />
+        <div className="place1">
+            <Card label='essai' picture='#' title='bonjour' />
+            <Card label='essai' picture='#' title='bonjour' />
+            <Card label='essai' picture='#' title='bonjour' />
+        </div>
+        <div className="place2">
+            <Card label='essai' picture='#' title='bonjour' />
+            <Card label='essai' picture='#' title='bonjour' />
+            <Card label='essai' picture='#' title='bonjour' />
+        </div>
     </div>
 )
 }
