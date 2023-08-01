@@ -2,6 +2,14 @@
   background-color: red;
 }
 
+.gallery {
+  background-color: grey;
+}
+
+.gallery-cards {
+  background-color: #ff6060;
+}
+
 .footer {
   background-color: black;
 }
@@ -24,6 +32,10 @@
 }
 
 .title-sea {
+  color: white;
+}
+
+.gallery-cards {
   color: white;
 }
 
@@ -52,6 +64,7 @@
 }
 .title-gallery .title-sea {
   position: relative;
+  top: 70px;
   left: 20px;
   text-align: center;
   z-index: 15;
@@ -59,19 +72,23 @@
 .title-gallery .sea {
   object-fit: cover;
   position: absolute;
-  top: -600px;
-  left: 0;
+  top: -663px;
+  left: 100px;
   z-index: -15;
 }
 
 .gallery {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 5px solid red;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 .gallery .gallery-cards {
   display: flex;
+  flex-direction: column;
   border: 5px solid blue;
+  padding: 15px;
 }
 
 .footer {
@@ -94,6 +111,19 @@
 .title-gallery .title-sea {
   width: 100%;
   height: 90%;
+}
+.title-gallery .sea {
+  width: 1240px;
+  height: 1875px;
+}
+
+.gallery {
+  width: 1240px;
+  height: 829px;
+}
+.gallery .gallery-cards {
+  width: 50%;
+  height: 40%;
 }
 
 .footer {
