@@ -21,11 +21,21 @@
     .sea {
         object-fit: cover;
         position: absolute;
-        top: -663px;
-        left: 100px;
+        top:-600px;
+        left: 0;
         z-index: -15;
     }
 }
+.gallery {
+    display: flex;
+    border: 5px solid red;
+    border-radius: 10px;
+    .gallery-cards {
+        display: flex;
+        border: 5px solid blue;
+    }
+}
+
 .footer{
     display: flex;
     flex-direction: column;

@@ -1,6 +1,6 @@
 function Card(props) {
     return(
-   <div style={{ display: 'flex', flexDirection:'column', padding:
+   <div className="gallery-cards" style={{ display: 'flex', flexDirection:'column', padding:
     15 }}>
             <span>{props.label}</span>
             <img src={props.picture} alt="logement" />

@@ -11,6 +11,11 @@ function Destination() {
 return(
     <div className="gallery">
         <Card label='essai' picture='#' title='bonjour' />
+        <Card label='essai' picture='#' title='bonjour' />
+        <Card label='essai' picture='#' title='bonjour' />
+        <Card label='essai' picture='#' title='bonjour' />
+        <Card label='essai' picture='#' title='bonjour' />
+        <Card label='essai' picture='#' title='bonjour' />
     </div>
 )
 }
