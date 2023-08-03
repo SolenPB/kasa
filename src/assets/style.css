@@ -97,6 +97,15 @@ body {
   z-index: 1;
 }
 
+.about-title {
+  width: 1240px;
+  height: 223px;
+}
+.about-title__about-picture {
+  width: 1240px;
+  height: 223px;
+}
+
 .footer {
   width: 1440px;
   height: 209px;
