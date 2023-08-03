@@ -80,11 +80,11 @@ body {
 }
 .gallery__gallery-cards__picture {
   object-fit: cover;
-  width: 100%;
+  z-index: 1;
   height: 100%;
 }
 .gallery__gallery-cards__title-card {
-  z-index: -1;
+  z-index: 2;
 }
 
 .footer {
