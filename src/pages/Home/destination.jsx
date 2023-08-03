@@ -7,11 +7,9 @@ function Destination() {
 
 return(
     <div className="gallery">
-        <div className="place1">
            {data.map((data, index) => {
              return <Card key={index} title={data.title} picture={data.cover} />
            })}
-        </div>
     </div>
 )
 }
