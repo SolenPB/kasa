@@ -46,14 +46,13 @@ body {
         border: 1px solid #ff6060;
         border-radius: 15px;
         padding: 15px;
+        margin-top: 10px;
     }
     .place1 {
         display: flex;
         justify-content: space-around;
-    }
-    .place2 {
-        display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+
     }
 }
 

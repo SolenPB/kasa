@@ -1,28 +1,19 @@
 import Card from "../../components/Card/card";
 
 function Destination() { 
-    fetch('../../datas/destination.json') 
-    .then(res => {return res.json})
-    .then(database => function (database) {
-            
-})
-.catch();
+    let data = require('../../datas/destination.json');
+    data = data.slice(0,6);
+    console.log(data);
 
 return(
     <div className="gallery">
         <div className="place1">
-            <Card label='essai' picture='#' title='bonjour' />
-            <Card label='essai' picture='#' title='bonjour' />
-            <Card label='essai' picture='#' title='bonjour' />
-        </div>
-        <div className="place2">
-            <Card label='essai' picture='#' title='bonjour' />
-            <Card label='essai' picture='#' title='bonjour' />
-            <Card label='essai' picture='#' title='bonjour' />
+           {data.map((data, index) => {
+             return <Card key={index} title={data.title} picture={data.cover} />
+           })}
         </div>
     </div>
 )
 }
 
 export default Destination
-
