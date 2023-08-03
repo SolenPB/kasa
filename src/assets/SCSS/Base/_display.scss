@@ -2,8 +2,8 @@ body {
     max-width: 1400px;
 }
 .gallery {
-    max-width: 1240px;
-    max-height: 829px;
+    width: 1240px;
+    height: 829px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -14,29 +14,28 @@ body {
     margin: 70px 0 40px 0;
 
     &__gallery-cards {
-        max-width: 310px;
-        max-height: 310px;
+        width: 340px;
+        height: 340px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         background-color: #ff6060;
-        border: 1px solid #ff6060;
         border-radius: 10px;
         color: white;
-        padding: 15px;
         margin-top: 10px;
 
         &__picture {
+            height: 300px;
+            border-radius: 10px 10px 0 0;
             object-fit: cover;
             z-index: 1;
-            height: 100%;
         }
 
         &__title-card {
             width: 300px;
             height: 52px;
             z-index: 2;
-            padding-top: 30px;
+            padding: 5px 0 0 10px;
         }
     }
 }
