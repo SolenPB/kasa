@@ -37,6 +37,8 @@ body {
         object-fit: cover;
         z-index: -20;
         filter: brightness(0.7);
+        margin-top: 50px;
+        margin-bottom: 40px;
     }
 }
 .gallery {
@@ -48,7 +50,7 @@ body {
     align-items: center;
     border: 5px solid red;
     border-radius: 25px;
-    margin-bottom: 40px;
+    margin: 70px 0 40px 0;
     .gallery-cards {
         max-width: 320px;
         max-height: 320px;
