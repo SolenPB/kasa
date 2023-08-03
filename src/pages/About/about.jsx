@@ -6,15 +6,15 @@ function About() {
                 <img src={img2} alt='Vue sur une chaîne de montagne et sa vallée' className='about-title__about-picture'/>
             </div>
             <div className='about-menu'>
-                <select name='description' className='reliability'>
-                    <option value="fiabilité">Fiabilité</option>
+                <select name='description' className='option-menu'>
+                    <option value="fiabilité" selected>Fiabilité</option>
                     <option>
                         Les annonces postées sur Kasa garantissent une fiabilité totale.
                         Les photos sont conformes aux logements, et toutes les informations
                         sont régulièrement vérifiées par nos équipes.    
                     </option> 
                 </select>
-                <select name='description' className='respect'>
+                <select name='description' className='option-menu'>
                     <option value="respect">Respect</option>
                     <option>
                         La bienveillance fait partie des valeurs fondatrices de Kasa.
@@ -22,7 +22,7 @@ function About() {
                         du voisinage entraînera une exclusion de la plateforme.
                     </option>
                 </select>
-                <select name='description' className='service'>
+                <select name='description' className='option-menu'>
                     <option value="service">Service</option>
                     <option>
                         La bienveillance fait partie des valeurs fondatrices de Kasa.
@@ -30,7 +30,7 @@ function About() {
                         du voisinage entraînera une exclusion de la plateforme.
                     </option>
                 </select>
-                <select name='description' className='security'>
+                <select name='description' className='option-menu'>
                     <option value="sécurité">Sécurité</option>
                     <option>
                         La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs,
