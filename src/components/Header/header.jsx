@@ -13,8 +13,8 @@ function Header() {
     <div className="header">
         <Logo />
         <nav>
-            <Link className="nav-link" to="/">Accueil</Link>
-            <Link className="nav-link" to="/about">A propos</Link>
+            <Link className="header__nav-link" to="/">Accueil</Link>
+            <Link className="header__nav-link" to="/about">A propos</Link>
         </nav>
     </div>
     )

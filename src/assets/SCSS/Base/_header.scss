@@ -1,0 +1,14 @@
+.header {
+    width: 1240px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &__nav-link {
+        padding-left: 70px;
+        color: #ff6060;
+        text-decoration: none;
+    }
+}

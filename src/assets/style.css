@@ -1,17 +1,15 @@
-.propos {
-  background-color: red;
+.header {
+  width: 1240px;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
-
-.gallery {
-  background-color: #f6f6f6;
-}
-
-.gallery-cards {
-  background-color: #ff6060;
-}
-
-.footer {
-  background-color: black;
+.header__nav-link {
+  padding-left: 70px;
+  color: #ff6060;
+  text-decoration: none;
 }
 
 * {
@@ -24,11 +22,6 @@
 
 .title-sea {
   font-size: 48px;
-}
-
-.nav-link {
-  color: #ff6060;
-  text-decoration: none;
 }
 
 .title-sea {
@@ -48,18 +41,6 @@
 
 body {
   display: flex;
-}
-
-.header {
-  width: 1240px;
-  height: 68px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-}
-.header .nav-link {
-  padding-left: 70px;
 }
 
 .title-gallery {
@@ -99,6 +80,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #f6f6f6;
   border: 5px solid red;
   border-radius: 25px;
   margin: 70px 0 40px 0;
@@ -109,14 +91,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-color: #ff6060;
   border: 1px solid #ff6060;
   border-radius: 10px;
   padding: 15px;
   margin-top: 10px;
 }
 .gallery .picture {
+  z-index: 1;
   object-fit: cover;
   width: 100%;
+  height: 100%;
+}
+.gallery .title-card {
+  z-index: 5;
 }
 
 .footer {
@@ -126,6 +114,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
   padding-top: 20px;
 }
 
