@@ -104,6 +104,8 @@ body {
 .about-title__about-picture {
   width: 1240px;
   height: 223px;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 .footer {
