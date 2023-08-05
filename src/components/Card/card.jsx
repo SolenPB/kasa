@@ -2,8 +2,7 @@ function Card(props) {
     return(
    <div className="gallery__gallery-cards" href="#">
             <img src={props.picture} alt="logement" className="gallery__gallery-cards__picture" />
-            <span className="gallery__gallery-cards__title-card">{props.title}</span>
-            <div className="gallery__gallery-cards__overlay"></div>
+            <span className="gallery__gallery-cards__title-card gallery__gallery-cards__overlay">{props.title}</span>
     </div>
     )
 }
