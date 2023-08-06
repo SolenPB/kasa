@@ -1,4 +1,6 @@
 import img2 from '../../assets/img2.png'
+import { useState, useEffect } from "react"
+
 function About() {
     return(
         <>
