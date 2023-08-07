@@ -2,12 +2,13 @@ import Slideshow from '../../components/Slideshow/slideshow';
 
 function Presentation() {    
     const data = require('../../datas/destination.json');
-    const coupure = data.slice(0,6);
-    console.log(coupure)
+    const newData = data.slice(0,6);
+    console.log(newData)
     return(
         <div className='description'>
-               {coupure.map((coupure, id) => { 
-                 return <Slideshow key={id} picture={coupure.cover} title={coupure.title} host={coupure.host}/>
+               {newData.map((newData, id) => { 
+                 return <Slideshow key={id} picture={newData.cover} title={newData.title} host={newData.host} location={newData.location} 
+                 tags={newData.tags} rating={newData.rating} description={newData.description} equipments={newData.equipments} />
                })}
         </div>
     )
