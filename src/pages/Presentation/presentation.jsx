@@ -1,21 +1,16 @@
-import { useParams } from 'react-router-dom';
+import Slideshow from '../../components/Slideshow/slideshow';
 
 function Presentation() {    
-    const {presentationProfil} = useParams();
-    const elements = [];
     const data = require('../../datas/destination.json');
-
-    data.map((data) => {
-        if(data.id === presentationProfil ) {
-            return elements.push(data)
-        }
-
-})
-return(
-    <div>
-        <img src={data.cover} alt='logement' />
-    </div>
-    
-)}
+    const coupure = data.slice(0,6);
+    console.log(coupure)
+    return(
+        <div className='description'>
+               {data.map((data) => { 
+                 return <Slideshow picture={data.cover} title={data.title} />
+               })}
+        </div>
+    )
+}
 
 export default Presentation
