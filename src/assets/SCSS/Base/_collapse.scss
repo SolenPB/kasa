@@ -1,5 +1,11 @@
 .list {
     margin-top: 25px;
+
+    &__list-description {
+        width: 1023px;
+        background-color: #F6F6F6;
+        color: #ff6060;
+    }
 }
 .list-button {
     display: flex;
