@@ -140,7 +140,11 @@ body {
 }
 
 .list {
-  margin-top: 25px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .list__list-description {
   width: 1023px;
