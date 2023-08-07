@@ -22,4 +22,12 @@
     &__list-title {
         padding-left: 10px;
     }
+
+    &__action-button {
+        border: none;
+        background-color: #ff6060;
+        color: white;
+        font-size: 25px;
+        border-radius: 5px;
+    }
 }
