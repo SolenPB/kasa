@@ -6,8 +6,8 @@ function Presentation() {
     console.log(coupure)
     return(
         <div className='description'>
-               {data.map((data) => { 
-                 return <Slideshow picture={data.cover} title={data.title} />
+               {coupure.map((coupure, id) => { 
+                 return <Slideshow key={id} picture={coupure.cover} title={coupure.title} />
                })}
         </div>
     )
