@@ -133,10 +133,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #ff6060;
+  margin: 100px 0 100px 0;
 }
 .error__error-title {
   color: #ff6060;
+  font-size: 288px;
+  margin: 0;
+}
+.error__error-message {
+  font-size: 36px;
+}
+.error__error-return {
+  color: #ff6060;
+  font-size: 18px;
 }
 
 .list {

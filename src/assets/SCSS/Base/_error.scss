@@ -2,9 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: #ff6060;
+    margin: 100px 0 100px 0;
 
     &__error-title {
         color: #ff6060;
+        font-size: 288px;
+        margin: 0;
+    }
+
+    &__error-message {
+        font-size: 36px;
+    }
+
+    &__error-return {
+        color: #ff6060;
+        font-size: 18px;
     }
 }
