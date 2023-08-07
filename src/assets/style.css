@@ -139,4 +139,20 @@ body {
   color: #ff6060;
 }
 
+.list {
+  margin-top: 25px;
+}
+
+.list-button {
+  display: flex;
+  justify-content: space-between;
+  width: 1023px;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+}
+.list-button__list-title {
+  padding-left: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */

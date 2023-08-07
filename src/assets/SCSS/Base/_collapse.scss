@@ -1,0 +1,15 @@
+.list {
+    margin-top: 25px;
+}
+.list-button {
+    display: flex;
+    justify-content: space-between;
+    width: 1023px;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 5px;
+
+    &__list-title {
+        padding-left: 10px;
+    }
+}
