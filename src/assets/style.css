@@ -129,4 +129,14 @@ body {
   padding-top: 20px;
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff6060;
+}
+.error__error-title {
+  color: #ff6060;
+}
+
 /*# sourceMappingURL=style.css.map */
