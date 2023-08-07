@@ -5,7 +5,7 @@ import Home from './pages/Home/home';
 import About from './pages/About/about';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
-import Error from './components/Header/Error';
+import Error from './components/Header/Error/error';
 import Destination from './pages/Home/destination';
 import './assets/style.css'
 

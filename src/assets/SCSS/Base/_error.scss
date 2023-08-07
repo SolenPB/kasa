@@ -1,0 +1,10 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6060;
+
+    &__error-title {
+        color: #ff6060;
+    }
+}
