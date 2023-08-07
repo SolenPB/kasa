@@ -7,7 +7,7 @@ import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
 import Error from './components/Header/Error/error';
 import Destination from './pages/Home/destination';
-import Carrousel from './pages/Carrousel/carrousel';
+import Presentation from './pages/Presentation/presentation';
 import './assets/style.css'
 
 
@@ -17,7 +17,7 @@ root.render(
             <Header />
                 <Routes>
                     <Route path='/' element={<><Home /><Destination /></>} />
-                    <Route path='/carrousel' element={<Carrousel />} />
+                    <Route path='/:presentation' element={<Presentation />} />
                     <Route path='/about' element={<About />} />
                     <Route path='*' element={<Error />} />
                 </Routes>
