@@ -9,6 +9,7 @@ import Error from './components/Header/Error/error';
 import Destination from './pages/Home/destination';
 import Presentation from './pages/Presentation/presentation';
 import './assets/style.css'
+import Slideshow from './components/Slideshow/slideshow';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +19,7 @@ root.render(
                 <Routes>
                     <Route path='/' element={<><Home /><Destination /></>} />
                     <Route path='/presentation' element={<Presentation />} />
+                    <Route path =':'element={<Slideshow />} />
                     <Route path='/about' element={<About />} />
                     <Route path='*' element={<Error />} />
                 </Routes>
