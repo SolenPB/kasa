@@ -97,7 +97,7 @@ function Collapse(){
     {/*Condition d'ouverture et de fermeture du bouton "Service"*/}
 
         {isOpenService ? (
-            <div className="list-menu">
+            <div className="menu">
                 <div className="list-button">
                     <h2 className="list-button__list-title">Service</h2>
                     <button className="list-button__action-button" onClick={() => ClosedService()}><FontAwesomeIcon icon={faChevronUp} /></button>
@@ -117,7 +117,7 @@ function Collapse(){
     {/*Condition d'ouverture et de fermeture du bouton "Sécurité" */}
 
         {isOpenSecurity ? (
-            <div className="list-menu">
+            <div className="menu">
                 <div className="list-button">
                     <h2 className="list-button__list-title">Sécurité</h2>
                     <button className="list-button__action-button" onClick={() => ClosedSecurity()}><FontAwesomeIcon icon={faChevronUp} /></button>
