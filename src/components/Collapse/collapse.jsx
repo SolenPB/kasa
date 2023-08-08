@@ -25,7 +25,7 @@ function Collapse(){
             <div className="list-menu">
                 <div className="list-button">
                     <h2 className="list-button__list-title">Respect</h2>
-                    <button className="list-button__action-button" onClick={ () => setIsOpenRespect(true)}><FontAwesomeIcon icon={faChevronUp} /></button>
+                    <button className="list-button__action-button" onClick={() => setIsOpenRespect(true)}><FontAwesomeIcon icon={faChevronUp} /></button>
                 </div>
                 {isOpenRespect ? (
                 <p className="list__list-description">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
@@ -36,7 +36,7 @@ function Collapse(){
             <div className="list-menu">
                 <div className="list-button">
                     <h2 className="list-button__list-title">Service</h2>
-                    <button className="list-button__action-button" onClick={ () => setIsOpenService(true)}><FontAwesomeIcon icon={faChevronUp} /></button>
+                    <button className="list-button__action-button" onClick={() => setIsOpenService(true)}><FontAwesomeIcon icon={faChevronUp} /></button>
                 </div>
                 {isOpenService ? (
                 <p className="list__list-description">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
