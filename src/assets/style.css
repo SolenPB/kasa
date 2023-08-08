@@ -158,9 +158,11 @@ body {
   flex-direction: column;
 }
 .list__list-description {
-  width: 1023px;
+  width: 1013px;
   background-color: #F6F6F6;
   color: #ff6060;
+  margin: 0;
+  padding: 20px 0 20px 10px;
 }
 
 .list-button {
@@ -182,12 +184,12 @@ body {
   color: white;
   font-size: 25px;
   border-radius: 5px;
-  margin: 10px 35px 0 0;
+  margin: 18px 35px 0 0;
   cursor: pointer;
 }
 .list-button__action-button:focus {
   transform: rotate(-180deg);
-  transition: transform 500ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
