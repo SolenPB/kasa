@@ -2,7 +2,12 @@
     display: flex;
     flex-direction: column;
     color: #ff6060;
-    &__slide-pictures{
+    &__slide-cover{
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+    }
+    &__slide-pictures {
         width: 1240px;
         height: 415px;
         object-fit: cover;

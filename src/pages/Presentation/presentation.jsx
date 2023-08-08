@@ -7,7 +7,7 @@ function Presentation() {
     return(
         <div className='description'>
                {newData.map((newData, id) => { 
-                 return <Slideshow key={id} picture={newData.cover} title={newData.title} host={newData.host} location={newData.location} 
+                 return <Slideshow key={id} pictures={newData.pictures}title={newData.title} host={newData.host} location={newData.location} 
                  tags={newData.tags} rating={newData.rating} description={newData.description} equipments={newData.equipments} />
                })}
         </div>

@@ -203,6 +203,11 @@ body {
   flex-direction: column;
   color: #ff6060;
 }
+.slide__slide-cover {
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+}
 .slide__slide-pictures {
   width: 1240px;
   height: 415px;

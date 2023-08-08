@@ -1,7 +1,7 @@
 function Slideshow(props) {
     return(
         <div className="slide">
-            <img src={props.picture} alt="logement" className="slide__slide-pictures"/>
+            <img src={props.pictures} alt="test" className="slide__slide-pictures"/>
             <span className="slide__slide-title">{props.title}</span>
             <span className="slide__slide-location">{props.location}</span>
 
