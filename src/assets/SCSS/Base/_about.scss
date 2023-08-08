@@ -1,4 +1,8 @@
-
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .about-title{
     width: 1240px;
     height: 223px;
@@ -10,7 +14,6 @@
         border-radius: 25px;
     }
 }
-
 .option-menu {
     width: 1023px;
     height: 52px;
