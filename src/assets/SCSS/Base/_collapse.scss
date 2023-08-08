@@ -9,7 +9,6 @@
         width: 1023px;
         background-color: #F6F6F6;
         color: #ff6060;
-        visibility: collapse;
     }
 }
 .list-button {
@@ -25,15 +24,20 @@
     }
 
     &__action-button {
+        width: 32px;
+        height: 32px;
         border: none;
         background-color: #ff6060;
         color: white;
         font-size: 25px;
         border-radius: 5px;
-        //transform: rotate(-180deg);
-        //transition: transform 500ms ease-in-out;
-    &:hover{
+        margin: 10px 35px 0 0;
         cursor: pointer;
-    }
+        &:focus {
+            transform: rotate(-180deg);
+            transition: transform 500ms ease-in-out;
+        }
+        
     }
 }
+
