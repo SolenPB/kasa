@@ -39,14 +39,9 @@
         border-radius: 5px;
         margin: 18px 35px 0 0;
         cursor: pointer;
-        transform: rotate(180 deg);
-        transition: transforms 200ms ease-in-out;
-        &:focus {
-            transform: rotate(-180deg);
-            transition: transform 200ms ease-in-out;
-        }
         
     }
 }
+
 
 

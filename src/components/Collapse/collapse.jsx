@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
+import { faChevronDown , faChevronUp } from "@fortawesome/free-solid-svg-icons"
 import { useState, useEffect } from "react"
 
 function Collapse(){
@@ -58,7 +58,7 @@ function Collapse(){
             <div className="menu">
                 <div className='list-button'>
                     <h2 className="list-button__list-title">Fiabilité</h2>
-                    <button className="list-button__action-button" onClick={() => ClosedReliability()}><FontAwesomeIcon icon={faChevronUp} /></button>
+                    <button className="list-button__action-button" onClick={() => ClosedReliability()}><FontAwesomeIcon icon={faChevronDown} /></button>
                 </div>
                 <p className="list__list-description">Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
                 régulièrement vérifiées par nos équipes.</p>
