@@ -60,8 +60,10 @@ function Collapse(){
                     <h2 className="list-button__list-title">Fiabilité</h2>
                     <button className="list-button__action-button" onClick={() => ClosedReliability()}><FontAwesomeIcon icon={faChevronDown} /></button>
                 </div>
-                <p className="list__list-description">Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
+            <div className="list__list-description">
+                <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
                 régulièrement vérifiées par nos équipes.</p>
+            </div>
             </div>
 
         ) : (
