@@ -10,7 +10,7 @@ function Collapse(){
 
     return(
         <div className="list">
-            <div className="list__list-menu">
+            <div className="list-menu">
                 <div className="list-button ">
                     <h2 className="list-button__list-title">Fiabilité</h2>
                     <button className="list-button__action-button" onClick={() => setIsOpenReliability(true)}><FontAwesomeIcon icon={faChevronUp} /></button>

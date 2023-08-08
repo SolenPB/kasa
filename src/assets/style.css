@@ -171,6 +171,10 @@ body {
   padding: 20px 0 20px 10px;
 }
 
+.list-menu {
+  margin-bottom: 40px;
+}
+
 .list-button {
   display: flex;
   justify-content: space-between;
@@ -178,7 +182,6 @@ body {
   background-color: #ff6060;
   color: white;
   border-radius: 5px;
-  margin-bottom: 40px;
 }
 .list-button__list-title {
   padding-left: 10px;
