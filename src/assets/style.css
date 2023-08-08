@@ -161,6 +161,7 @@ body {
   width: 1023px;
   background-color: #F6F6F6;
   color: #ff6060;
+  visibility: collapse;
 }
 
 .list-button {
