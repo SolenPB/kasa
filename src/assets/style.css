@@ -182,5 +182,8 @@ body {
   font-size: 25px;
   border-radius: 5px;
 }
+.list-button__action-button:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */

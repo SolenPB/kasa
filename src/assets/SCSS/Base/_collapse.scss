@@ -32,5 +32,8 @@
         border-radius: 5px;
         //transform: rotate(-180deg);
         //transition: transform 500ms ease-in-out;
+    &:hover{
+        cursor: pointer;
+    }
     }
 }
