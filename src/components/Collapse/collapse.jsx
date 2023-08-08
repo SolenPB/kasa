@@ -109,7 +109,7 @@ function Collapse(){
             <div className="menu">
                 <div className='list-button'>
                     <h2 className="list-button__list-title">Service</h2>
-                    <button className="list-button__action-button" onClick={() => OpenService()}><FontAwesomeIcon icon={faChevronUp} /></button>
+                    <button className="list-button__action-button" onClick={() => OpenService()} ><FontAwesomeIcon icon={faChevronUp} /></button>
                 </div>
             </div>
         )}
