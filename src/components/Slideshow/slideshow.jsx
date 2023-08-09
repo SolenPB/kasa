@@ -6,7 +6,6 @@ function Slideshow() {
     const data = require('../../datas/destination.json');
     const filter = useParams();
     let dataFiltered ="";  
-
     
     for( let i = 0; i < data.length; i++ ){
       if(filter.id === data[i].id) {
@@ -15,8 +14,9 @@ function Slideshow() {
       }
     }
     return(
-    <>
+    <div className="slide">
         <Carousel>
+          
             {dataFiltered.pictures.map((data, index) => {
               return (<>
               <div className="slide-pictures">
@@ -26,12 +26,12 @@ function Slideshow() {
               )
             })}       
         </Carousel>
-        <div className="slide-title">
-                <h2>{dataFiltered.title}</h2>
-              </div>
+          <div className="slide-title">
+            <h2>{dataFiltered.title}</h2>
+            <span>{dataFiltered.location} </span>
+          </div>
         
-        
-    </>
+    </div>
 
     )
     
