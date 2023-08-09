@@ -207,6 +207,10 @@ body {
   display: none;
 }
 
+.carousel-status {
+  display: none;
+}
+
 .thumbs-wrapper {
   display: none;
 }
@@ -214,6 +218,7 @@ body {
 .slide-pictures {
   width: 1240px;
   height: 415px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,13 +18,18 @@ function Slideshow() {
     <>
         <Carousel>
             {dataFiltered.pictures.map((data, index) => {
-              return (
+              return (<>
               <div className="slide-pictures">
                 <img src={dataFiltered.pictures[index]} alt="" />
               </div>
+              </>
               )
             })}       
         </Carousel>
+        <div className="slide-title">
+                <h2>{dataFiltered.title}</h2>
+              </div>
+        
         
     </>
 
