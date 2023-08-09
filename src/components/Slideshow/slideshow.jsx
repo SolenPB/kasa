@@ -1,19 +1,28 @@
-function Slideshow(props) {
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+function Slideshow() {
+    
+    const data = require('../../datas/destination.json');
+    const newData = data.slice(0,6);
+    console.log(newData)
+    console.log(newData.id)
     return(
-        <div className="slide">
-            <img src={props.pictures} alt="test" className="slide__slide-pictures"/>
-            <span className="slide__slide-title">{props.title}</span>
-            <span className="slide__slide-location">{props.location}</span>
+    <>
+        <Carousel>
+                {newData.map((newData) => { 
+                return(
+                 <div key={newData.id}>
+                   <img src={newData.cover} alt="" />
+                   <div className="title">{newData.title}</div>
+                 </div>
+                )})}
+        </Carousel>
+        
+    </>
 
-            <div className="slide__host"><span>{props.host.name}</span>
-            <img src={props.host.picture} alt="Profil de l'hôte" className="slide__slide-host__host-picture" /></div>
-
-            <span className="slide__slide-tags">{props.tags}</span>
-            <span>{props.rating}</span>
-            <p>{props.description}</p>
-            <span>{props.equipments}</span>
-        </div>
     )
+    
 }
 
 export default Slideshow
