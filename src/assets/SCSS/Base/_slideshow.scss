@@ -1,34 +1,14 @@
-.slide {
-    display: flex;
-    flex-direction: column;
-    color: #ff6060;
-    &__slide-cover{
-        width: 1240px;
-        height: 415px;
-        object-fit: cover;
-    }
-    &__slide-pictures {
-        width: 1240px;
-        height: 415px;
-        object-fit: cover;
-    }
-    &__slide-title {
-        font-size: 36px;
-    }
-    &__slide-location {
-        font-size: 18px;
-    }
-    &__slide-tags {
-        display: flex;
-    }
-    &__slide-host{
-        display: flex;
-        justify-content: space-around;
-        &__host-picture{
-            width: 64px;
-            height: 64px;
-            border-radius: 30px;
-            object-fit: cover;
-        }
-    }
+.carousel-root{
+    width: 1240px;
+    height: 415px;
+}
+.control-dots{
+    display: none;
+}
+.thumbs-wrapper{
+    display: none;
+}
+.slide-pictures {
+    width: 1240px;
+    height: 415px;
 }
