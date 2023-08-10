@@ -17,8 +17,8 @@ function Carousel(props){
 
   return(
     <div className="carousel">
-      <button onClick={Previous}></button>
-      <button onClick={Next}></button>
+      <button className="btn-previous" onClick={Previous}></button>
+      <button className="btn-next"onClick={Next}></button>
       <img src={props.pictures[index]} alt=""/>
     </div>
   );
