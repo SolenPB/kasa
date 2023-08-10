@@ -29,4 +29,15 @@
             border-radius: 20px;
         } 
     }
+    &__slide-title{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 20px;
+        &__title-location{
+            font-size: 36px;
+        }
+        &__city-location{
+            font-size: 18px;
+        }
+    }
 }

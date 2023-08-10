@@ -235,5 +235,16 @@ body {
   border: 1px solid #ff6060;
   border-radius: 20px;
 }
+.slide__slide-title {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 20px;
+}
+.slide__slide-title__title-location {
+  font-size: 36px;
+}
+.slide__slide-title__city-location {
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=style.css.map */

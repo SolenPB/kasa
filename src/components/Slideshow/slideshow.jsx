@@ -2,6 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import ChevronUp from "../../assets/chevronup";
 
 function Slideshow() {
     const data = require('../../datas/destination.json');
@@ -37,6 +38,7 @@ function Slideshow() {
     }
     return(
     <div className="slide">
+
         <Carousel showThumbs={false}>
             {dataFiltered.pictures.map((data, index) => {
               return (<>
@@ -47,9 +49,11 @@ function Slideshow() {
               )
             })}       
         </Carousel>
-          <div className="slide-title">
-            <h2>{dataFiltered.title}</h2>
-            <span>{dataFiltered.location} </span>
+
+          <div className="slide__slide-title">
+            <h2 className="slide__slide-title__title-location">{dataFiltered.title}</h2>
+            <span className="host">{dataFiltered.host.name}<img src={dataFiltered.host.picture} alt="" className="host-picture"/></span>
+            <span className="slide__slide-title__city-location">{dataFiltered.location} </span>
           </div>
           <div className="slide__tags">
             <span className="slide__tags__tagElement" >{dataFiltered.tags[0]}</span>
@@ -58,17 +62,21 @@ function Slideshow() {
           <div className="slide__rating">
             <span>{dataFiltered.rating}</span>
           </div>
+
+        <div className="info">
           <div className="description">
             {isOpenDescription ? (
               <div className="description-title">
                 <h2>Description</h2>
-                <button className="btn-description" onClick={() => CloseDescription()}>^</button>
+                <button className="btn-description" onClick={() => CloseDescription()}>{ChevronUp}</button>
                 <p>{dataFiltered.description}</p>
               </div>   
             ) : (
               <div className="description-title">
-                <h2>Description</h2>
-                <button className="btn-description" onClick={() => OpenDescription()}>^</button>
+                <div className="btn">
+                  <h2>Description</h2>
+                  <button className="btn-description" onClick={() => OpenDescription()}>{ChevronUp}</button>
+                </div>
               </div>
             )
               }
@@ -86,14 +94,11 @@ function Slideshow() {
               <button className="btn-equipments" onClick={() => OpenEquipments()}>^</button>
             </div>
           )
-
-          }
-            
+          }    
           </div>
+      </div>
     </div>
-
-    )
-    
+    )  
 }  
 
 export default Slideshow
