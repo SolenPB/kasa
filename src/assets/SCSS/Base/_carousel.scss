@@ -10,8 +10,11 @@
             width: 1240px;
             height: 415px;
             display: flex;
+            align-items: center;
             &__btn-scroll{
                 position: relative;
+                width: 96px;
+                height: 119px;
                 display: flex;
                 justify-content: space-between;
                 z-index: 2;
