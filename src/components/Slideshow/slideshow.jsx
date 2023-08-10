@@ -2,7 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import ChevronUp from "../../assets/chevronup";
+
 
 function Slideshow() {
     const data = require('../../datas/destination.json');
@@ -75,14 +75,14 @@ function Slideshow() {
             {isOpenDescription ? (
               <div className="description-title">
                 <h2>Description</h2>
-                <button className="btn-description" onClick={() => CloseDescription()}>{ChevronUp}</button>
+                <button className="btn-description" onClick={() => CloseDescription()}></button>
                 <p>{dataFiltered.description}</p>
               </div>   
             ) : (
               <div className="description-title">
                 <div className="btn">
                   <h2>Description</h2>
-                  <button className="btn-description" onClick={() => OpenDescription()}>{ChevronUp}</button>
+                  <button className="btn-description" onClick={() => OpenDescription()}></button>
                 </div>
               </div>
             )

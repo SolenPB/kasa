@@ -225,7 +225,9 @@ body {
   color: #ff6060;
 }
 .slide__title-host {
+  width: 1240px;
   display: flex;
+  justify-content: space-between;
   margin-top: 40px;
 }
 .slide__title-host__slide-title {

@@ -19,7 +19,9 @@
 .slide{
     color: #ff6060;
     &__title-host{
+        width: 1240px;
         display: flex;
+        justify-content: space-between;
         margin-top: 40px;
         &__slide-title{
             width: 635px;
