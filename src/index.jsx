@@ -8,8 +8,8 @@ import Footer from './components/Footer/footer';
 import Error from './components/Header/Error/error';
 import Destination from './pages/Home/destination';
 import Presentation from './pages/Presentation/presentation';
-import './assets/style.css'
-import Slideshow from './components/Slideshow/slideshow';
+import './assets/style.css';
+import Slider from './pages/Presentation/presentation';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,7 +19,7 @@ root.render(
                 <Routes>
                     <Route path='/' element={<><Home /><Destination /></>} />
                     <Route path='/presentation' element={<Presentation />} />
-                    <Route path =':id'element={<Slideshow />} />
+                    <Route path ='/:id'element={<Slider />} />
                     <Route path='/about' element={<About />} />
                     <Route path='*' element={<Error />} />
                 </Routes>
