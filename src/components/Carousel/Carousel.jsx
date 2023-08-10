@@ -15,8 +15,6 @@ function Carousel(props){
   setIndex(newIndex >= length ? 0 : newIndex);
   };
 
-
-
   return(
     <div className="carousel">
       <button onClick={Previous}></button>
