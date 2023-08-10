@@ -202,26 +202,6 @@ body {
   width: 1240px;
   height: 415px;
 }
-.carousel__carousel-slider {
-  width: 100%;
-  height: 100%;
-}
-
-.control-dots {
-  display: none;
-}
-
-.carousel-status {
-  display: none;
-}
-
-.slide-pictures {
-  width: 1240px;
-  height: 415px;
-  margin-bottom: 20px;
-  object-fit: cover;
-  align-items: center;
-}
 
 .slide {
   width: 1240px;
