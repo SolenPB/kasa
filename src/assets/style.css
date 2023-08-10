@@ -309,6 +309,7 @@ body {
 .slide__info__description__description-list {
   background-color: #f6f6f6;
   color: #ff6060;
+  margin-bottom: 20px;
 }
 .slide__info__equipments {
   width: 582px;

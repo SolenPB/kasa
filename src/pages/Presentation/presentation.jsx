@@ -2,7 +2,7 @@ import Slideshow from "../../components/Slideshow/slideshow"
 
 function Presentation() {    
     return(
-        <div className='description'>
+        <div className='details'>
                <Slideshow />
         </div>
     )
