@@ -198,16 +198,20 @@ body {
   cursor: pointer;
 }
 
-.carousel {
-  width: 1240px;
-  height: 415px;
-}
-
 .slide {
   width: 1240px;
   height: 643px;
   color: #ff6060;
   margin-bottom: 70px;
+}
+.slide__slide-pictures__carousel {
+  width: 1240px;
+  height: 415px;
+}
+.slide__slide-pictures__carousel__carousel-pictures {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .slide__title-host {
   width: 1240px;

@@ -1,12 +1,19 @@
-.carousel{
-    width: 1240px;
-    height: 415px;
-}
 .slide{
     width: 1240px;
     height: 643px;
     color: #ff6060;
     margin-bottom: 70px;
+    &__slide-pictures{
+        &__carousel{
+            width: 1240px;
+            height: 415px;
+            &__carousel-pictures{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
     &__title-host{
         width: 1240px;
         display: flex;

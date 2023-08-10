@@ -17,10 +17,10 @@ function Carousel(props){
   };
 
   return(
-    <div className="carousel">
+    <div className="slide__slide-pictures__carousel">
       <button className="btn-previous" onClick={Previous}></button>
       <button className="btn-next"onClick={Next}></button>
-      <img src={props.pictures[index]} alt=""/>
+      <img src={props.pictures[index]} alt="" className="slide__slide-pictures__carousel__carousel-pictures"/>
     </div>
   );
 };
