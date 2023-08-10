@@ -224,5 +224,16 @@ body {
 .slide {
   color: #ff6060;
 }
+.slide__tags {
+  display: flex;
+}
+.slide__tags__tagElement {
+  background-color: #ff6060;
+  color: white;
+  margin: 20px 20px 0 0;
+  padding: 10px;
+  border: 1px solid #ff6060;
+  border-radius: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */

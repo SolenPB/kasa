@@ -10,12 +10,11 @@ function Slideshow() {
     for( let i = 0; i < data.length; i++ ){
       if(filter.id === data[i].id) {
         dataFiltered = data[i];
-        console.log(dataFiltered);
       }
     }
     return(
     <div className="slide">
-        <Carousel>
+        <Carousel showThumbs={false}>
           
             {dataFiltered.pictures.map((data, index) => {
               return (<>
@@ -29,12 +28,16 @@ function Slideshow() {
           <div className="slide-title">
             <h2>{dataFiltered.title}</h2>
             <span>{dataFiltered.location} </span>
-            <span>{dataFiltered.tags}</span>
-            <span>{dataFiltered.rating}</span>
-            <p>{dataFiltered.description}</p>
-            <span>{dataFiltered.equipments}</span>
           </div>
-        
+          <div className="slide__tags">
+            <span className="slide__tags__tagElement" >{dataFiltered.tags[0]}</span>
+            <span className="slide__tags__tagElement">{dataFiltered.tags[1]}</span>
+          </div>
+          <div className="slide__rating">
+            <span>{dataFiltered.rating}</span>
+          </div> 
+            <p>{dataFiltered.description}</p>
+            <span>{dataFiltered.equipments}</span>        
     </div>
 
     )
