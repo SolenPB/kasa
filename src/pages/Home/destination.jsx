@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 function Destination() { 
     let data = require('../../datas/destination.json');
     let element = data.slice(0,6);
-    console.log(element);
 
 return(
     <div className="gallery">

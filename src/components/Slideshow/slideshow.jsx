@@ -102,8 +102,12 @@ function Slideshow() {
             <h2>Équipements</h2>
             <button className="slide__info__equipments__equipments-title__btn-equipments" onClick={() => CloseEquipments()}><FontAwesomeIcon icon={faChevronUp} /></button>
           </div>
-          <div>
-            <span className="slide__info__equipments__equipments-list">{dataFiltered.equipments}</span> 
+          <div className="slide__info__equipments__equipments-list">
+            <span>{dataFiltered.equipments[0]}</span>
+            <span>{dataFiltered.equipments[1]}</span>
+            <span>{dataFiltered.equipments[2]}</span>
+            <span>{dataFiltered.equipments[3]}</span>
+            <span>{dataFiltered.equipments[4]}</span> 
           </div>
           </>
           ) : (
