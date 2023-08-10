@@ -1,6 +1,10 @@
-.carousel-root{
+.carousel{
     width: 1240px;
     height: 415px;
+    &__carousel-slider{
+        width: 100%;
+        height: 100%;
+    }
 }
 .control-dots{
     display: none;
@@ -8,21 +12,23 @@
 .carousel-status{
     display: none;
 }
-.thumbs-wrapper{
-    display: none;
-}
 .slide-pictures {
     width: 1240px;
     height: 415px;
     margin-bottom: 20px;
+    object-fit: cover;
+    align-items: center;
 }
 .slide{
+    width: 1240px;
+    height: 643px;
     color: #ff6060;
+    margin-bottom: 70px;
     &__title-host{
         width: 1240px;
         display: flex;
         justify-content: space-between;
-        margin-top: 40px;
+        margin-top: 20px;
         &__slide-title{
             width: 635px;
             height: 77px;
@@ -83,10 +89,12 @@
                 justify-content: space-between;
                 background-color: #ff6060;
                 color: white;
+                border-radius: 10px;
                 &__btn-description{
                     border: none;
                     background-color: #ff6060;
                     color: white;
+                    border-radius: 10px;
                 }
             }
             &__description-list{
@@ -99,6 +107,7 @@
             height: 52px;
             display: flex;
             flex-direction: column;
+            border-radius: 10px;
             &__equipments-title{
                 display: flex;
                 justify-content: space-between;
@@ -108,9 +117,13 @@
                     border: none;
                     background-color: #ff6060;
                     color: white;
+                    border-radius: 10px;
                 }
             }
             &__equipments-list{
+                height: 200px;
+                display: flex;
+                flex-direction: column;
                 background-color: #f6f6f6;
                 color: #ff6060;
             }
