@@ -297,12 +297,14 @@ body {
   background-color: #ff6060;
   color: white;
   border-radius: 10px;
+  padding-left: 20px;
 }
 .slide__info__description__description-title__btn-description {
   border: none;
   background-color: #ff6060;
   color: white;
   border-radius: 10px;
+  padding-right: 20px;
 }
 .slide__info__description__description-list {
   background-color: #f6f6f6;
@@ -320,12 +322,15 @@ body {
   justify-content: space-between;
   background-color: #ff6060;
   color: white;
+  border-radius: 10px;
+  padding-left: 20px;
 }
 .slide__info__equipments__equipments-title__btn-equipments {
   border: none;
   background-color: #ff6060;
   color: white;
   border-radius: 10px;
+  padding-right: 20px;
 }
 .slide__info__equipments__equipments-list {
   height: 200px;

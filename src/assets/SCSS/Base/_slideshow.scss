@@ -90,11 +90,13 @@
                 background-color: #ff6060;
                 color: white;
                 border-radius: 10px;
+                padding-left: 20px;
                 &__btn-description{
                     border: none;
                     background-color: #ff6060;
                     color: white;
                     border-radius: 10px;
+                    padding-right: 20px;
                 }
             }
             &__description-list{
@@ -113,11 +115,14 @@
                 justify-content: space-between;
                 background-color: #ff6060;
                 color: white;
+                border-radius: 10px;
+                padding-left: 20px;
                 &__btn-equipments{
                     border: none;
                     background-color: #ff6060;
                     color: white;
                     border-radius: 10px;
+                    padding-right: 20px;
                 }
             }
             &__equipments-list{
