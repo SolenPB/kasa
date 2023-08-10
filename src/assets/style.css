@@ -214,6 +214,7 @@ body {
 }
 .slide__slide-pictures__carousel__btn-scroll {
   position: relative;
+  left: 85px;
   width: 96px;
   height: 119px;
   display: flex;
@@ -223,10 +224,11 @@ body {
 }
 .slide__slide-pictures__carousel__carousel-pictures {
   position: relative;
+  display: inline-block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 0;
 }
 .slide__title-host {
   width: 1240px;
