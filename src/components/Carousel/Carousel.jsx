@@ -4,6 +4,7 @@ import { useState } from "react";
 function Carousel(props){
   const[index, setIndex] = useState(0);
   const length = props.pictures.lenght;
+  console.log(props.pictures.length);
 
   function Previous(){
   const newIndex = index -1;
