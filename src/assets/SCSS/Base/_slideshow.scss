@@ -69,5 +69,52 @@
             } 
         }
     }
+    &__info{
+        width: 1240px;
+        display: flex;
+        justify-content: space-between;
+        &__description{
+            width: 582px;
+            height: 52px;
+            display: flex;
+            flex-direction: column;
+            &__description-title{
+                display: flex;
+                justify-content: space-between;
+                background-color: #ff6060;
+                color: white;
+                &__btn-description{
+                    border: none;
+                    background-color: #ff6060;
+                    color: white;
+                }
+            }
+            &__description-list{
+                background-color: #f6f6f6;
+                color: #ff6060;
+            }
+        }
+        &__equipments{
+            width: 582px;
+            height: 52px;
+            display: flex;
+            flex-direction: column;
+            &__equipments-title{
+                display: flex;
+                justify-content: space-between;
+                background-color: #ff6060;
+                color: white;
+                &__btn-equipments{
+                    border: none;
+                    background-color: #ff6060;
+                    color: white;
+                }
+            }
+            &__equipments-list{
+                background-color: #f6f6f6;
+                color: #ff6060;
+            }
+        }
+    }
     
 }

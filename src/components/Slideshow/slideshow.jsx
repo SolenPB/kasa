@@ -2,6 +2,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 
 function Slideshow() {
@@ -49,6 +51,7 @@ function Slideshow() {
               )
             })}       
         </Carousel>
+
         <div className="slide__title-host">
           <div className="slide__title-host__slide-title">
             <h2 className="slide__title-host__slide-title__title-location">{dataFiltered.title}</h2>
@@ -72,35 +75,41 @@ function Slideshow() {
           </div>
         </div>
 
-        <div className="info">
-          <div className="description">
-            {isOpenDescription ? (
-              <div className="description-title">
+        <div className="slide__info">
+          <div className="slide__info__description">
+            {isOpenDescription ? (<>
+              <div className="slide__info__description__description-title">
                 <h2>Description</h2>
-                <button className="btn-description" onClick={() => CloseDescription()}></button>
+                <button className="slide__info__description__description-title__btn-description" onClick={() => CloseDescription()}><FontAwesomeIcon icon={faChevronUp} /></button>
+              </div> 
+              <div className="slide__info__description__description-list">
                 <p>{dataFiltered.description}</p>
-              </div>   
+              </div>
+              </>  
+                
             ) : (
-              <div className="description-title">
-                <div className="btn">
+              <div className="slide__info__description__description-title">
                   <h2>Description</h2>
-                  <button className="btn-description" onClick={() => OpenDescription()}></button>
-                </div>
+                  <button className="slide__info__description__description-title__btn-description" onClick={() => OpenDescription()}><FontAwesomeIcon icon={faChevronUp} /></button>
               </div>
             )
               }
-          </div>   
-          <div className="equipments">
-          {isOpenEquipments ? (
-          <div className="equipment-title">
-            <h2 className="equipments-title">Équipements</h2>
-            <button className="btn-equipments" onClick={() => CloseEquipments()}>^</button>
+          </div>
+
+          <div className="slide__info__equipments">
+          {isOpenEquipments ? (<>
+          <div className="slide__info__equipments__equipments-title">
+            <h2>Équipements</h2>
+            <button className="slide__info__equipments__equipments-title__btn-equipments" onClick={() => CloseEquipments()}><FontAwesomeIcon icon={faChevronUp} /></button>
+          </div>
+          <div className="slide__info__equipments__equipments-list">
             <span>{dataFiltered.equipments}</span> 
           </div>
+          </>
           ) : (
-            <div className="equipment-title">
+            <div className="slide__info__equipments__equipments-title">
               <h2>Équipements</h2>
-              <button className="btn-equipments" onClick={() => OpenEquipments()}>^</button>
+              <button className="slide__info__equipments__equipments-title__btn-equipments" onClick={() => OpenEquipments()}><FontAwesomeIcon icon={faChevronUp} /></button>
             </div>
           )
           }    
