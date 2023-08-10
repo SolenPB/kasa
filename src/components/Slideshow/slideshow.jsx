@@ -42,23 +42,30 @@ function Slideshow() {
         <Carousel showThumbs={false}>
             {dataFiltered.pictures.map((data, index) => {
               return (<>
-              <div className="slide-pictures">
+              <div className="slide-pictures" key={index}>
                 <img src={dataFiltered.pictures[index]} alt="" />
               </div>
               </>
               )
             })}       
         </Carousel>
-
-          <div className="slide__slide-title">
-            <h2 className="slide__slide-title__title-location">{dataFiltered.title}</h2>
-            <span className="host">{dataFiltered.host.name}<img src={dataFiltered.host.picture} alt="" className="host-picture"/></span>
-            <span className="slide__slide-title__city-location">{dataFiltered.location} </span>
+        <div className="slide__title-host">
+          <div className="slide__title-host__slide-title">
+            <h2 className="slide__title-host__slide-title__title-location">{dataFiltered.title}</h2>
+            <span className="slide__title-host__slide-title__city-location">{dataFiltered.location} </span>
           </div>
+
+          <div className="slide__title-host__host">
+            <span className="slide__title-host__host__host-name">{dataFiltered.host.name}</span>
+            <img src={dataFiltered.host.picture} alt="" className="slide__title-host__host__host-picture"/>
+          </div>
+        </div>
+
           <div className="slide__tags">
             <span className="slide__tags__tagElement" >{dataFiltered.tags[0]}</span>
             <span className="slide__tags__tagElement">{dataFiltered.tags[1]}</span>
           </div>
+
           <div className="slide__rating">
             <span>{dataFiltered.rating}</span>
           </div>
