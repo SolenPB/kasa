@@ -61,14 +61,16 @@ function Slideshow() {
           </div>
         </div>
 
-          <div className="slide__tags">
-            <span className="slide__tags__tagElement" >{dataFiltered.tags[0]}</span>
-            <span className="slide__tags__tagElement">{dataFiltered.tags[1]}</span>
+        <div className="slide__tags-rating">
+          <div className="slide__tags-rating__tags">
+            <span className="slide__tags-rating__tags__tagElement" >{dataFiltered.tags[0]}</span>
+            <span className="slide__tags-rating__tags__tagElement">{dataFiltered.tags[1]}</span>
           </div>
 
-          <div className="slide__rating">
+          <div className="slide__tags-rating__rating">
             <span>{dataFiltered.rating}</span>
           </div>
+        </div>
 
         <div className="info">
           <div className="description">

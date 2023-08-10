@@ -259,13 +259,18 @@ body {
   object-fit: cover;
   border-radius: 35px;
 }
-.slide__tags {
+.slide__tags-rating {
   display: flex;
+  align-items: center;
 }
-.slide__tags__tagElement {
+.slide__tags-rating__tags {
+  display: flex;
+  align-items: center;
+}
+.slide__tags-rating__tags__tagElement {
   background-color: #ff6060;
   color: white;
-  margin: 20px 20px 0 0;
+  margin: 20px 20px 20px 0;
   padding: 10px;
   border: 1px solid #ff6060;
   border-radius: 20px;
