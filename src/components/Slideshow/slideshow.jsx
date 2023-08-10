@@ -29,6 +29,10 @@ function Slideshow() {
           <div className="slide-title">
             <h2>{dataFiltered.title}</h2>
             <span>{dataFiltered.location} </span>
+            <span>{dataFiltered.tags}</span>
+            <span>{dataFiltered.rating}</span>
+            <p>{dataFiltered.description}</p>
+            <span>{dataFiltered.equipments}</span>
           </div>
         
     </div>
