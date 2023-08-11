@@ -222,6 +222,9 @@ body {
   align-items: center;
   z-index: 2;
 }
+.slide__slide-pictures__carousel__btn-scroll:focus + .slide__slide-pictures__carousel__carousel-pictures {
+  transform: translateX(100%);
+}
 .slide__slide-pictures__carousel__carousel-pictures {
   position: relative;
   display: inline-block;
@@ -229,6 +232,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  transition: transform 330ms ease-in-out;
 }
 .slide__title-host {
   width: 1240px;

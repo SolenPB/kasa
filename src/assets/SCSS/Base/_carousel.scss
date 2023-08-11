@@ -20,6 +20,9 @@
                 justify-content: center;
                 align-items: center;
                 z-index: 2;
+                &:focus + .slide__slide-pictures__carousel__carousel-pictures{
+                    transform: translateX(100%);
+                }
             }
             &__carousel-pictures{
                 position: relative;
@@ -28,6 +31,7 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: 0;
+                transition: transform 330ms ease-in-out;
             }
         }
     }
