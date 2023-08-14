@@ -19,9 +19,11 @@ function Carousel(props){
 
   return(
     <div className="slide__slide-pictures__carousel">
-        <button className="slide__slide-pictures__carousel__btn-scroll" onClick={Previous}><FontAwesomeIcon icon={faChevronLeft} /></button>
-        <img src={props.pictures[index]} alt="" className="slide__slide-pictures__carousel__carousel-pictures"/>
-        <button className="slide__slide-pictures__carousel__btn-scroll"onClick={Next}><FontAwesomeIcon icon={faChevronRight} /></button>
+        <button className="slide__slide-pictures__carousel__btn-scroll slide__slide-pictures__carousel__previous" onClick={Previous}><FontAwesomeIcon icon={faChevronLeft} /></button>
+        <div className="slide__slide-pictures__carousel__effect">
+          <img src={props.pictures[index]} alt="" className="slide__slide-pictures__carousel__effect__carousel-pictures"/>
+        </div>
+        <button className="slide__slide-pictures__carousel__btn-scroll slide__slide-pictures__carousel__next"onClick={Next}><FontAwesomeIcon icon={faChevronRight} /></button>
     </div>
   );
 };
