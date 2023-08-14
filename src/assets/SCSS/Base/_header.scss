@@ -5,11 +5,4 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
-
-    &__nav-link__home + &__nav-link__about {
-        font-size: 18px;
-        padding-left: 70px;
-        color: #ff6060;
-        text-decoration: none;
-    }
 }

@@ -6,20 +6,16 @@
   align-items: center;
   margin-bottom: 40px;
 }
-.header__nav-link__home + .header__nav-link__about {
-  font-size: 18px;
-  padding-left: 70px;
-  color: #ff6060;
-  text-decoration: none;
-}
 
 * {
   font-family: "Montserrat", sans-serif;
 }
 
 .header__nav-link__home {
-  color: #ff6060;
   text-decoration: underline;
+  color: #ff6060;
+  font-size: 18px;
+  padding-left: 70px;
 }
 
 .title-gallery {
@@ -52,10 +48,6 @@
   filter: brightness(0.7);
   margin-top: 50px;
   margin-bottom: 40px;
-}
-
-body {
-  max-width: 1400px;
 }
 
 .gallery {
@@ -104,6 +96,17 @@ body {
   height: 200px;
   border-radius: 0 0 10px 10px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+body {
+  max-width: 1400px;
+}
+
+.header__nav-link__about {
+  text-decoration: underline;
+  color: #ff6060;
+  font-size: 18px;
+  padding-left: 70px;
 }
 
 .about {
