@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
+import ActiveStar from "../../assets/active-star";
+import InactiveStar from "../../assets/inactive-star";
 import Carousel from "../../components/Carousel/Carousel";
 
 function Slider() {
@@ -37,6 +39,22 @@ function Slider() {
       }
     }
     
+    function ratingScale({noteValue}){
+      const range = [1, 2, 3, 4, 5];
+      const noteType = "{dataFiltered.rating}" === 'range' ? (
+      <img src={ActiveStar} alt="red-star" />
+      ) : (
+      <img src={InactiveStar} alt="grey-star" />
+    )
+    return (
+    <div>
+      {range.map((rangeElem) => 
+      noteValue >= rangeElem ? <span key={rangeElem.toString()}>{noteType}</span> : null
+    )}
+    </div>
+    )
+    
+}
     return(
     <div className="slide">
         <div className="slide-pictures">
@@ -62,7 +80,7 @@ function Slider() {
           </div>
 
           <div className="slide__tags-rating__rating">
-            <span>{dataFiltered.rating}</span>
+            <span>{ratingScale}</span>
           </div>
         </div>
 

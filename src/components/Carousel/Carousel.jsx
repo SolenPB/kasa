@@ -5,8 +5,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 function Carousel(props){
   const[index, setIndex] = useState(0);
-  const length = props.pictures.lenght;
-
+  const length = props.pictures.length;
 
   function Previous(){
   const newIndex = index -1;

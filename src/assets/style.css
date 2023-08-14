@@ -222,9 +222,6 @@ body {
   align-items: center;
   z-index: 2;
 }
-.slide__slide-pictures__carousel__btn-scroll:focus + .slide__slide-pictures__carousel__carousel-pictures {
-  transform: translateX(100%);
-}
 .slide__slide-pictures__carousel__carousel-pictures {
   position: relative;
   display: inline-block;
