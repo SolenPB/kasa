@@ -6,7 +6,7 @@
   align-items: center;
   margin-bottom: 40px;
 }
-.header__nav-link {
+.header__nav-link__home + .header__nav-link__about {
   font-size: 18px;
   padding-left: 70px;
   color: #ff6060;
@@ -15,6 +15,11 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+}
+
+.header__nav-link__home {
+  color: #ff6060;
+  text-decoration: underline;
 }
 
 .title-gallery {
