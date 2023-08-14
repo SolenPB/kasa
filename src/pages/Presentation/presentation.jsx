@@ -77,6 +77,9 @@ function Slider() {
           <div className="slide__tags-rating__tags">
             <span className="slide__tags-rating__tags__tagElement" >{dataFiltered.tags[0]}</span>
             <span className="slide__tags-rating__tags__tagElement">{dataFiltered.tags[1]}</span>
+            <span className="slide__tags-rating__tags__tagElement">{dataFiltered.tags[2]}</span>
+            <span className="slide__tags-rating__tags__tagElement">{dataFiltered.tags[3]}</span>
+            <span className="slide__tags-rating__tags__tagElement">{dataFiltered.tags[4]}</span>
           </div>
 
           <div className="slide__tags-rating__rating">

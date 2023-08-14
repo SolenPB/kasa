@@ -19,9 +19,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border: none;
+                font-size: 80px;
+                color: white;
                 z-index: 2;
             }
             &__previous{
+                
                 &:focus + .slide__slide-pictures__carousel__effect{
                     transform: scaleX(0%);
                     transform-origin: left;

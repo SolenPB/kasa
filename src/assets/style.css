@@ -231,6 +231,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  font-size: 80px;
+  color: white;
   z-index: 2;
 }
 .slide__slide-pictures__carousel__previous:focus + .slide__slide-pictures__carousel__effect {
