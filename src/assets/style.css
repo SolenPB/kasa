@@ -234,8 +234,12 @@ body {
   z-index: 2;
 }
 .slide__slide-pictures__carousel__previous:focus + .slide__slide-pictures__carousel__effect {
-  transform: scaleY(0%);
+  transform: scaleX(0%);
   transform-origin: left;
+}
+.slide__slide-pictures__carousel__next:focus + .slide__slide-pictures__carousel__effect {
+  transform: scaleX(0%);
+  transform-origin: right;
 }
 .slide__slide-pictures__carousel__effect {
   width: 100%;

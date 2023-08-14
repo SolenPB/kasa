@@ -23,9 +23,15 @@
             }
             &__previous{
                 &:focus + .slide__slide-pictures__carousel__effect{
-                    transform: scaleY(0%);
+                    transform: scaleX(0%);
                     transform-origin: left;
                 }               
+            }
+            &__next{
+                &:focus + .slide__slide-pictures__carousel__effect{
+                    transform: scaleX(0%);
+                    transform-origin: right;
+                }
             }
             &__effect{
                 width: 100%;
