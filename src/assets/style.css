@@ -292,6 +292,16 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.slide__tags-rating__rating__ratingElement {
+  display: flex;
+  width: 500px;
+  height: 40px;
+}
+.slide__tags-rating__rating__ratingElement__rating-star {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
 .slide__tags-rating__tags {
   display: flex;
   align-items: center;

@@ -81,6 +81,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        &__rating{
+            &__ratingElement{
+                display: flex;
+                width: 500px;
+                height: 40px;
+                &__rating-star{
+                    display: flex;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
         &__tags{
             display: flex;
             align-items: center;

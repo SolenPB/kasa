@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 import Carousel from "../../components/Carousel/Carousel";
+import RatingScale from "../../components/Carousel/Rating";
 
 function Slider() {
     const data = require('../../datas/destination.json');
@@ -57,15 +58,20 @@ function Slider() {
 
         <div className="slide__tags-rating">
           <div className="slide__tags-rating__tags">
-            <span className="slide__tags-rating__tags__tagElement" >{dataFiltered.tags[0]}</span>
-            <span className="slide__tags-rating__tags__tagElement">{dataFiltered.tags[1]}</span>
-            <span className="slide__tags-rating__tags__tagElement">{dataFiltered.tags[2]}</span>
-            <span className="slide__tags-rating__tags__tagElement">{dataFiltered.tags[3]}</span>
-            <span className="slide__tags-rating__tags__tagElement">{dataFiltered.tags[4]}</span>
+          {dataFiltered.tags.map((data, index) =>
+            {
+              return(
+                <span key={index} className="slide__tags-rating__tags__tagElement">
+                  {data}
+                </span>
+              )
+            }
+          )
+          }
           </div>
 
           <div className="slide__tags-rating__rating">
-            <span>{dataFiltered.rating}</span>
+            <RatingScale rating={dataFiltered.rating}/>
           </div>
         </div>
 

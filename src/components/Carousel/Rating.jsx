@@ -1,21 +1,36 @@
 import ActiveStar from "../../assets/active-star";
 import InactiveStar from "../../assets/inactive-star";
 
-function RatingScale({noteValue}){
-    const range = [1, 2, 3, 4, 5];
-    const noteType = "{dataFiltered.rating}" === 'range' ? (
-    <img src={ActiveStar} alt="red-star" />
-    ) : (
-    <img src={InactiveStar} alt="grey-star" />
-  )
+function RatingScale(props){
+    let n = 0;
+    let note = [];
+    console.log(props.rating)
+
+    while(n < 5){
+      n++;
+    if(n <= props.rating){
+      note.push(<ActiveStar />)
+    }
+    else
+    {
+      note.push(<InactiveStar />)
+    }
+    }
+
+    console.log(note);
   return (
-  <div>
-    {range.map((rangeElem) => 
-    noteValue >= rangeElem ? <span key={rangeElem.toString()}>{noteType}</span> : null
-  )}
+  <div className="slide__tags-rating__rating__ratingElement">
+    {note.map((data, index) =>
+      { console.log(data)
+;        return(
+        <span key={index} className="slide__tags-rating__rating__ratingElement__rating-star">
+          {data}
+        </span>
+      )}
+    )}
   </div>
   )
-  
+
 }
 
-export default RatingScale
+export default RatingScale 
