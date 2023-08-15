@@ -225,6 +225,7 @@ body {
   align-items: center;
 }
 .slide__slide-pictures__carousel__btn-scroll {
+  position: relative;
   width: 96px;
   height: 119px;
   display: flex;
@@ -237,11 +238,9 @@ body {
   z-index: 2;
 }
 .slide__slide-pictures__carousel__next {
-  position: relative;
   right: 85px;
 }
 .slide__slide-pictures__carousel__previous {
-  position: relative;
   left: 85px;
 }
 .slide__slide-pictures__carousel__carousel-pictures {
@@ -295,13 +294,14 @@ body {
 }
 .slide__tags-rating__rating__ratingElement {
   display: flex;
+  justify-content: flex-end;
   width: 500px;
   height: 40px;
 }
 .slide__tags-rating__rating__ratingElement__rating-star {
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .slide__tags-rating__tags {
   display: flex;

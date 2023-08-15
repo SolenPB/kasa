@@ -12,6 +12,7 @@
             display: flex;
             align-items: center;
             &__btn-scroll{
+                position: relative;
                 width: 96px;
                 height: 119px;
                 display: flex;
@@ -24,11 +25,9 @@
                 z-index: 2;
             }
             &__next{
-                position: relative;
                 right: 85px;
             }
             &__previous{
-                position: relative;
                 left: 85px;
             }
             &__carousel-pictures{
@@ -85,12 +84,13 @@
         &__rating{
             &__ratingElement{
                 display: flex;
+                justify-content: flex-end;
                 width: 500px;
                 height: 40px;
                 &__rating-star{
                     display: flex;
-                    width: 20px;
-                    height: 20px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }
