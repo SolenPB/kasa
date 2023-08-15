@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import ChevronLeft from "../../assets/chevron-left";
+import ChevronRight from "../../assets/chevron-right";
 
 function Carousel(props){
   const[index, setIndex] = useState(0);
@@ -19,9 +18,9 @@ function Carousel(props){
 
   return(
     <div className="slide__slide-pictures__carousel">
-        <button className="slide__slide-pictures__carousel__btn-scroll slide__slide-pictures__carousel__previous" onClick={Previous}><FontAwesomeIcon icon={faChevronLeft} /></button>
+        <button className="slide__slide-pictures__carousel__btn-scroll slide__slide-pictures__carousel__previous" onClick={Previous}><ChevronLeft/></button>
           <img src={props.pictures[index]} alt="" className="slide__slide-pictures__carousel__carousel-pictures"/>
-        <button className="slide__slide-pictures__carousel__btn-scroll slide__slide-pictures__carousel__next"onClick={Next}><FontAwesomeIcon icon={faChevronRight} /></button>
+        <button className="slide__slide-pictures__carousel__btn-scroll slide__slide-pictures__carousel__next"onClick={Next}><ChevronRight /></button>
     </div>
   );
 };

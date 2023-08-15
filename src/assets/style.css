@@ -232,6 +232,7 @@ body {
   align-items: center;
   border: none;
   font-size: 80px;
+  background: none;
   color: white;
   z-index: 2;
 }
