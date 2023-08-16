@@ -20,6 +20,7 @@ function Carousel(props){
     <div className="slide__slide-pictures__carousel">
         <button className="slide__slide-pictures__carousel__btn-scroll slide__slide-pictures__carousel__previous" onClick={Previous}><ChevronLeft/></button>
           <img src={props.pictures[index]} alt="" className="slide__slide-pictures__carousel__carousel-pictures"/>
+          <span className="slide__slide-pictures___carousel__carousel-pictures__counter">{index +1}/{length}</span>
         <button className="slide__slide-pictures__carousel__btn-scroll slide__slide-pictures__carousel__next"onClick={Next}><ChevronRight /></button>
     </div>
   );
