@@ -228,16 +228,11 @@ body {
 }
 .slide__slide-pictures__carousel__btn-scroll {
   position: relative;
-  width: 96px;
-  height: 119px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: none;
   font-size: 80px;
   background: none;
   color: white;
-  z-index: 2;
+  z-index: 5;
 }
 .slide__slide-pictures__carousel__next {
   right: 85px;
@@ -252,7 +247,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 25px;
-  z-index: 0;
+  z-index: 3;
 }
 .slide__title-host {
   width: 1240px;
