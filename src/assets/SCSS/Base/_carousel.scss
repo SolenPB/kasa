@@ -162,8 +162,10 @@
                 height: 200px;
                 display: flex;
                 flex-direction: column;
+                border-radius: 0 0 10px 10px;
                 background-color: #f6f6f6;
                 color: #ff6060;
+                padding: 20px 0 20px 30px;
             }
         }
     }
