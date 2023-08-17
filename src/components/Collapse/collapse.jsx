@@ -21,8 +21,8 @@ function Collapse(props){
         <div>
         {isOpenDrop ? (
             <div className="menu">
-                <div className='list-button'>
-                    <h2 className="list-button__list-title">{props.title}</h2>
+                <div className="menu__menu-description">
+                    <h2>{props.title}</h2>
                     <button className="list-button__action-button__active" onClick={() => ClosedDrop()}><Up /></button>
                 </div>
             <div className="list__list-description">
@@ -32,8 +32,8 @@ function Collapse(props){
 
         ) : (
             <div className="menu">
-                <div className='list-button'>
-                    <h2 className="list-button__list-title">{props.title}</h2>
+                <div className="menu__menu-description">
+                    <h2>{props.title}</h2>
                     <button className="list-button__action-button__inactive" onClick={() => OpenDrop()}><Up /></button>
                 </div>
             </div>

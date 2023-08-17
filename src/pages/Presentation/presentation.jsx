@@ -1,8 +1,6 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
 import Carousel from "../../components/Carousel/Carousel";
 import RatingScale from "../../components/Carousel/Rating";
-import Details from "../../components/Carousel/Details";
 import Collapse from "../../components/Collapse/collapse";
 
 function Slider(props) {
@@ -54,8 +52,8 @@ function Slider(props) {
         </div>
 
         <div className="slide__info">
-          <Collapse title="Description" description={dataFiltered.description} />
-          <Collapse title="Equipements" description={dataFiltered.equipments} />
+          <div className="slide__info__description"><Collapse title="Description" description={dataFiltered.description} /></div>
+          <Collapse title="Equipements" description={dataFiltered.equipments} className="slide__info__equipments"/>
         </div>
       </div>
     )  
