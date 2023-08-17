@@ -262,7 +262,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: 15px;
   z-index: 3;
 }
 .slide__title-host {
@@ -276,7 +276,7 @@ body {
   height: 77px;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-left: 20px;
 }
 .slide__title-host__slide-title__title-location {
   font-size: 36px;
@@ -304,6 +304,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .slide__tags-rating__rating__ratingElement {
   display: flex;
