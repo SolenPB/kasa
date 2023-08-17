@@ -4,7 +4,6 @@ import InactiveStar from "../../assets/inactive-star";
 function RatingScale(props){
     let n = 0;
     let note = [];
-    console.log(props.rating)
 
     while(n < 5){
       n++;

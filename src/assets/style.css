@@ -170,14 +170,16 @@ body {
   font-size: 18px;
 }
 
-.list {
+.about-list {
   margin-top: 35px;
+  width: 1240px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.list__list-description {
+.about-list__list-description {
   width: 1013px;
   background-color: #F6F6F6;
   color: #ff6060;
