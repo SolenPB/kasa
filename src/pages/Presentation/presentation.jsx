@@ -1,36 +1,14 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 import Carousel from "../../components/Carousel/Carousel";
 import RatingScale from "../../components/Carousel/Rating";
+import Details from "../../components/Carousel/Details";
+import Collapse from "../../components/Collapse/collapse";
 
-function Slider() {
+function Slider(props) {
     const data = require('../../datas/destination.json');
     const filter = useParams();
     let dataFiltered ="";
-    
-    const[isOpenDescription, setIsOpenDescription] = useState(false);
-    const[isOpenEquipments, setIsOpenEquipments] = useState(false);
-    function OpenDescription(){
-      setIsOpenDescription(true);
-    }
-    function CloseDescription(){
-      setIsOpenDescription(false);
-    }
-    function OpenEquipments(){
-      setIsOpenEquipments(true);
-    }
-    function CloseEquipments(){
-      setIsOpenEquipments(false);
-    }
-
-    useEffect(() => {
-      OpenDescription();
-      CloseDescription();
-      OpenEquipments();
-      CloseEquipments();
-    }, [])
 
     for( let i = 0; i < data.length; i++ ){
       if(filter.id === data[i].id) {
@@ -76,50 +54,10 @@ function Slider() {
         </div>
 
         <div className="slide__info">
-          <div className="slide__info__description">
-            {isOpenDescription ? (<>
-              <div className="slide__info__description__description-title">
-                <h2>Description</h2>
-                <button className="slide__info__description__description-title__btn-description" onClick={() => CloseDescription()}><FontAwesomeIcon icon={faChevronUp} /></button>
-              </div> 
-              <div className="slide__info__description__description-list">
-                <p>{dataFiltered.description}</p>
-              </div>
-              </>  
-                
-            ) : (
-              <div className="slide__info__description__description-title">
-                  <h2>Description</h2>
-                  <button className="slide__info__description__description-title__btn-description" onClick={() => OpenDescription()}><FontAwesomeIcon icon={faChevronUp} /></button>
-              </div>
-            )
-              }
-          </div>
-
-          <div className="slide__info__equipments">
-          {isOpenEquipments ? (<>
-          <div className="slide__info__equipments__equipments-title">
-            <h2>Équipements</h2>
-            <button className="slide__info__equipments__equipments-title__btn-equipments" onClick={() => CloseEquipments()}><FontAwesomeIcon icon={faChevronUp} /></button>
-          </div>
-          <div className="slide__info__equipments__equipments-list">
-            <span>{dataFiltered.equipments[0]}</span>
-            <span>{dataFiltered.equipments[1]}</span>
-            <span>{dataFiltered.equipments[2]}</span>
-            <span>{dataFiltered.equipments[3]}</span>
-            <span>{dataFiltered.equipments[4]}</span> 
-          </div>
-          </>
-          ) : (
-            <div className="slide__info__equipments__equipments-title">
-              <h2>Équipements</h2>
-              <button className="slide__info__equipments__equipments-title__btn-equipments" onClick={() => OpenEquipments()}><FontAwesomeIcon icon={faChevronUp} /></button>
-            </div>
-          )
-          }    
-          </div>
+          <Collapse title="Description" description={dataFiltered.description} />
+          <Collapse title="Equipements" description={dataFiltered.equipments} />
+        </div>
       </div>
-    </div>
     )  
 }  
 
