@@ -200,7 +200,7 @@ body {
 .list-button__list-title {
   padding-left: 10px;
 }
-.list-button__action-button {
+.list-button__action-button__inactive {
   width: 32px;
   height: 32px;
   border: none;
@@ -210,6 +210,19 @@ body {
   border-radius: 5px;
   margin: 18px 35px 0 0;
   cursor: pointer;
+}
+.list-button__action-button__active {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: #ff6060;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+  margin: 18px 35px 0 0;
+  cursor: pointer;
+  transform: rotate(-180deg);
+  transition: transform 200ms ease-in-out;
 }
 
 .slide {

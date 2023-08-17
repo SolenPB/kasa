@@ -29,17 +29,31 @@
         padding-left: 10px;
     }
 
-    &__action-button {
-        width: 32px;
-        height: 32px;
-        border: none;
-        background-color: #ff6060;
-        color: white;
-        font-size: 25px;
-        border-radius: 5px;
-        margin: 18px 35px 0 0;
-        cursor: pointer;
-        
+    &__action-button{
+        &__inactive{
+            width: 32px;
+            height: 32px;
+            border: none;
+            background-color: #ff6060;
+            color: white;
+            font-size: 25px;
+            border-radius: 5px;
+            margin: 18px 35px 0 0;
+            cursor: pointer;
+        }
+        &__active{
+            width: 32px;
+            height: 32px;
+            border: none;
+            background-color: #ff6060;
+            color: white;
+            font-size: 25px;
+            border-radius: 5px;
+            margin: 18px 35px 0 0;
+            cursor: pointer;
+            transform: rotate(-180deg);
+            transition: transform 200ms ease-in-out;
+        }
     }
 }
 
