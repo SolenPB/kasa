@@ -18,7 +18,7 @@ function Collapse(props){
     }, [])
 
     return(
-        <div className="about-list">
+        <div>
         {isOpenDrop ? (
             <div className="menu">
                 <div className='list-button'>
