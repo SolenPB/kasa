@@ -12,7 +12,7 @@ function About() {
                 <img src={img2} alt='Vue sur une chaîne de montagne et sa vallée' className='about-title__about-picture'/>
             </div>
             <div className='about-list'>
-                <Collapse title="Fiabilité" description={reliability} />
+                <Collapse title="Fiabilité" description={reliability}/>
                 <Collapse title="Respect" description={respect} />
                 <Collapse title="Service" description={service} />
                 <Collapse title="Sécurité" description={security} />

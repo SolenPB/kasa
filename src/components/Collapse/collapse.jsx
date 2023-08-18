@@ -1,5 +1,6 @@
 import Up from "../../assets/chevron-up-down";
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 function Collapse(props){
     const[isOpenDrop, setIsOpenDrop] = useState(false);
@@ -17,11 +18,19 @@ function Collapse(props){
         ClosedDrop();
     }, [])
 
+    const pages = useParams();
+    console.log(pages.id)
+    const style = pages.id ? (
+            null
+    ) : (
+        {divParent : "menu",
+        divEnfant : "menu__menu-description"}
+    )
     return(
         <div>
         {isOpenDrop ? (
-            <div className="menu">
-                <div className="menu__menu-description">
+            <div className={style.divParent}>
+                <div className={style.divEnfant}>
                     <h2>{props.title}</h2>
                     <button className="list-button__action-button__active" onClick={() => ClosedDrop()}><Up /></button>
                 </div>
@@ -31,8 +40,8 @@ function Collapse(props){
             </div>
 
         ) : (
-            <div className="menu slide__info__menu">
-                <div className="menu__menu-description slide__info__menu__menu-description">
+            <div className={style.divParent}>
+                <div className={style.divEnfant}>
                     <h2>{props.title}</h2>
                     <button className="list-button__action-button__inactive" onClick={() => OpenDrop()}><Up /></button>
                 </div>

@@ -16,11 +16,11 @@ function RatingScale(props){
     }
     }
 
-    console.log(note);
+
   return (
   <div className="slide__tags-rating__rating__ratingElement">
     {note.map((data, index) =>
-      { console.log(data)
+      { 
 ;        return(
         <span key={index} className="slide__tags-rating__rating__ratingElement__rating-star">
           {data}

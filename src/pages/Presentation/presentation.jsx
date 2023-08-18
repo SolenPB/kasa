@@ -6,6 +6,7 @@ import Collapse from "../../components/Collapse/collapse";
 function Slider(props) {
     const data = require('../../datas/destination.json');
     const filter = useParams();
+
     let dataFiltered ="";
 
     for( let i = 0; i < data.length; i++ ){

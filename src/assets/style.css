@@ -129,6 +129,10 @@ body {
   border-radius: 25px;
 }
 
+.about-list__aupif {
+  width: 180px;
+}
+
 .option-menu {
   width: 1023px;
   height: 52px;
