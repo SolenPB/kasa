@@ -34,6 +34,11 @@
                 border-radius: 15px;
                 z-index: 3;
             }
+            &__counter{
+                position: relative;
+                z-index: 2;
+                background-color: blue;
+            }
             
         }
     }
@@ -76,7 +81,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 20px;
+        margin: 20px 0 0 20px;
         &__rating{
             &__ratingElement{
                 display: flex;
@@ -106,6 +111,11 @@
     &__info{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-left: 20px;
+        &__description{
+            border-radius: 10px;
+        }
     }    
 }
 

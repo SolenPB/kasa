@@ -52,8 +52,8 @@ function Slider(props) {
         </div>
 
         <div className="slide__info">
-          <div className="slide__info__description"><Collapse title="Description" description={dataFiltered.description} /></div>
-          <Collapse title="Equipements" description={dataFiltered.equipments} className="slide__info__equipments"/>
+          <Collapse title="Description" description={dataFiltered.description} />
+          <Collapse title="Equipements" description={dataFiltered.equipments} />
         </div>
       </div>
     )  
