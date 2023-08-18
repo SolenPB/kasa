@@ -21,7 +21,8 @@ function Collapse(props){
     const pages = useParams();
     console.log(pages.id)
     const style = pages.id ? (
-            null
+        {divParent : "info",
+        divEnfant : "info-details"}
     ) : (
         {divParent : "menu",
         divEnfant : "menu__menu-description"}
