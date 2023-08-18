@@ -194,7 +194,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 582px;
+  width: 1080px;
   height: 52px;
   background-color: #ff6060;
   color: white;
@@ -354,8 +354,8 @@ body {
   align-items: center;
   margin-left: 20px;
 }
-.slide__info__description {
-  border-radius: 10px;
+.slide__info__menu__menu-description {
+  width: 582px;
 }
 
 /*# sourceMappingURL=style.css.map */
