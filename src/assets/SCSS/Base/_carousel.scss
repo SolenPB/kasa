@@ -36,8 +36,11 @@
             }
             &__counter{
                 position: relative;
-                z-index: 2;
-                background-color: blue;
+                color: white;
+                font-size: 18px;
+                z-index: 10;
+                top: 180px;
+                right: 520px;
             }
             
         }
