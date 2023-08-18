@@ -251,6 +251,7 @@ body {
   height: 415px;
   display: flex;
   align-items: center;
+  margin-left: 20px;
 }
 .slide__slide-pictures__carousel__btn-scroll {
   position: relative;
@@ -261,7 +262,7 @@ body {
   z-index: 5;
 }
 .slide__slide-pictures__carousel__next {
-  right: 85px;
+  right: 105px;
 }
 .slide__slide-pictures__carousel__previous {
   left: 85px;

@@ -11,6 +11,7 @@
             height: 415px;
             display: flex;
             align-items: center;
+            margin-left: 20px;
             &__btn-scroll{
                 position: relative;
                 border: none;
@@ -20,7 +21,7 @@
                 z-index: 5;
             }
             &__next{
-                right: 85px;
+                right: 105px;
             }
             &__previous{
                 left: 85px;
