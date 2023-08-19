@@ -347,6 +347,7 @@ body {
   justify-content: flex-end;
   width: 500px;
   height: 40px;
+  margin-right: 90px;
 }
 .slide__tags-rating__rating__ratingElement__rating-star {
   display: flex;
@@ -368,7 +369,6 @@ body {
 .slide__info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 20px 0 20px;
 }
 .slide__info__details {
@@ -381,6 +381,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 30px;
+}
+.slide__info__details__dropdown__text {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  border-radius: 0 0 10px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
