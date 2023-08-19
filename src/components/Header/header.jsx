@@ -8,24 +8,24 @@ function Header() {
 
         let styleChanged = nav.pathname;
         if(styleChanged === "/about"){
-            navStyle = {divParent : "header",
+            navStyle = {divParent : "header__nav-list",
                         divEnfant : "header__nav-list__inactive",
                         divEnfant2 : "header__nav-list__active"};
         } else if(styleChanged === "/"){
-            navStyle = {divParent : "header",
+            navStyle = {divParent : "header__nav-list",
                         divEnfant : "header__nav-list__active",
                         divEnfant2 : "header__nav-list__inactive"};
         } else {
-            navStyle = {divParent : "header",
-                        divEnfant : "header__nav-list",
-                        divEnfant2 : "header__nav-list"};
+            navStyle = {divParent : "header__nav-list",
+                        divEnfant : "header__nav-list__inactive",
+                        divEnfant2 : "header__nav-list__inactive"};
         }
 
     console.log(nav);
     return(
-    <div className={navStyle.divParent}>
+    <div className="header">
         <Logo />
-        <nav>
+        <nav className={navStyle.divParent}>
             <Link className={navStyle.divEnfant} to="/">Accueil</Link>
             <Link className={navStyle.divEnfant2} to="/about">A propos</Link>
         </nav>

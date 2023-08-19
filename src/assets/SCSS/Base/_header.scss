@@ -6,17 +6,10 @@
     align-items: center;
     margin: 20px 0 40px 0;
     &__nav-list{
+        display: flex;
+        justify-content: space-around;
         color: #ff6060;
         text-decoration: none;
         margin-left: 100px;
-    }
-    &__nav-list__active{
-        color: #ff6060;
-        margin-left: 100px;
-    }
-    &__nav-list__inactive{
-        text-decoration: none;
-        margin-left: 100px;
-        color: #ff6060;
     }
 }
