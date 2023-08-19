@@ -369,10 +369,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 20px;
+  margin: 0 20px 0 20px;
 }
-.slide__info__menu__menu-description {
+.slide__info__details {
   width: 582px;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
+}
+.slide__info__details__dropdown {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

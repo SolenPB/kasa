@@ -117,10 +117,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: 20px;
-        &__menu{
-            &__menu-description{
-                width: 582px;
+        margin:0 20px 0 20px;
+        &__details{
+            width: 582px;
+            background-color: #ff6060;
+            color: white;
+            border-radius: 10px;
+            &__dropdown{
+                display: flex;
+                justify-content: space-between;
+                padding-left: 30px;
             }
         }
     }    
