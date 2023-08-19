@@ -6,10 +6,15 @@
     align-items: center;
     margin: 20px 0 40px 0;
     &__nav-list{
+        width: 300px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        &__active{
         color: #ff6060;
-        text-decoration: none;
-        margin-left: 100px;
+        }
+        &__inactive{
+            color: #ff6060;
+            text-decoration: none;
+        }
     }
 }
