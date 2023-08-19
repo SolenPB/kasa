@@ -5,4 +5,9 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px 0 40px 0;
+    &__nav-list{
+        text-decoration: none;
+        color: #ff6060;
+        margin-left: 100px;
+    }
 }

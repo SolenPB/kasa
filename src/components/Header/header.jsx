@@ -6,8 +6,8 @@ function Header() {
     <div className="header">
         <Logo />
         <nav>
-            <Link className="header__nav-link__home header__nav-list" to="/">Accueil</Link>
-            <Link className="header__nav-link__about header__nav-list" to="/about">A propos</Link>
+            <Link className="header__nav-list" to="/">Accueil</Link>
+            <Link className="header__nav-list" to="/about">A propos</Link>
         </nav>
     </div>
     )
