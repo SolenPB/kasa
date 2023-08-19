@@ -7,9 +7,18 @@
   margin: 20px 0 40px 0;
 }
 .header__nav-list {
+  color: #ff6060;
   text-decoration: none;
+  margin-left: 100px;
+}
+.header__nav-list__active {
   color: #ff6060;
   margin-left: 100px;
+}
+.header__nav-list__inactive {
+  text-decoration: none;
+  margin-left: 100px;
+  color: #ff6060;
 }
 
 * {

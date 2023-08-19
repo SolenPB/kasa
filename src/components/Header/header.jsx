@@ -9,12 +9,12 @@ function Header() {
         let styleChanged = nav.pathname;
         if(styleChanged === "/about"){
             navStyle = {divParent : "header",
-                        divEnfant : "header__nav-list__home__inactive",
-                        divEnfant2 : "header__nav-list__about__active"};
+                        divEnfant : "header__nav-list__inactive",
+                        divEnfant2 : "header__nav-list__active"};
         } else if(styleChanged === "/"){
             navStyle = {divParent : "header",
-                        divEnfant : "header__nav-list__home__active",
-                        divEnfant2 : "header_nav-list__about__inactive"};
+                        divEnfant : "header__nav-list__active",
+                        divEnfant2 : "header__nav-list__inactive"};
         } else {
             navStyle = {divParent : "header",
                         divEnfant : "header__nav-list",
