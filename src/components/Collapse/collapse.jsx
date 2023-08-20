@@ -20,10 +20,10 @@ function Collapse(props){
 
     const pages = useParams();
     const style = pages.id ? (
-        {divParent : "slide__info__details",
-        divEnfant : "slide__info__details__dropdown",
-        divEnfant1 : "slide__info__details__dropdown__title",
-        divEnfant2 : "slide__info__details__dropdown__text"}
+        {divParent : "slide__details",
+        divEnfant : "slide__details__dropdown",
+        divEnfant1 : "slide__details__dropdown__title",
+        divEnfant2 : "slide__details__dropdown__text"}
     ) : (
         {divParent : "about-menu",
         divEnfant : "about-menu__dropdown",

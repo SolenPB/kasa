@@ -1,5 +1,6 @@
 import img2 from '../../assets/img2.png'
 import Collapse from '../../components/Collapse/collapse';
+import Footer from '../../components/Footer/footer';
 
 function About() {
     const reliability = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes"
@@ -15,6 +16,7 @@ function About() {
                 <Collapse title="Respect" description={respect} />
                 <Collapse title="Service" description={service} />
                 <Collapse title="Sécurité" description={security} />
+                <Footer />
         </div>         
 )
 }

@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel";
 import RatingScale from "../../components/Carousel/Rating";
 import Collapse from "../../components/Collapse/collapse";
+import Footer from "../../components/Footer/footer"
 
 function Slider(props) {
     const data = require('../../datas/destination.json');
@@ -14,7 +15,18 @@ function Slider(props) {
         dataFiltered = data[i];
       }
     }
-    
+    function Equipments(dataArray){
+      return(<ul>
+        {dataArray.map((data, index) => 
+      {
+        return(
+          <li key={index} className="equipments">{data}</li>
+        )
+      }
+      )}
+      </ul>)
+      
+    }
     return(
     <div className="slide">
         <div className="slide-pictures">
@@ -51,9 +63,10 @@ function Slider(props) {
             <RatingScale rating={dataFiltered.rating}/>
           </div>
         </div>
-        <div className="slide__info">
+        <div>
           <Collapse title="Description" description={dataFiltered.description} />
-          <Collapse title="Equipements" description={dataFiltered.equipments} />
+          <Collapse title="Equipements" description={Equipments(dataFiltered.equipments)} />
+          <Footer />
         </div>
       </div>
     )  

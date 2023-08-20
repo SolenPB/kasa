@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/home';
 import About from './pages/About/about';
 import Header from './components/Header/header';
-import Footer from './components/Footer/footer';
 import Error from './components/Header/Error/error';
 import Destination from './pages/Home/destination';
 import Presentation from './pages/Presentation/presentation';
@@ -23,6 +22,6 @@ root.render(
                     <Route path='/about' element={<About />} />
                     <Route path='*' element={<Error />} />
                 </Routes>
-            <Footer />
+            {/*<Footer />*/}
     </Router>
 );
