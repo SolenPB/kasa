@@ -57,7 +57,7 @@
             height: 77px;
             display: flex;
             flex-direction: column;
-            margin-left: 20px ;
+            margin-left: 75px ;
             &__title-location{
                 font-size: 36px;
                 margin: 0;
@@ -71,6 +71,7 @@
             height: 64px;
             display: flex;
             align-items: center;
+            margin-left: 140px;
             &__host-name{
                 margin-right: 10px;
             }
@@ -86,14 +87,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 20px 0 0 20px;
+        margin: 20px 0 0 75px;
         &__rating{
             &__ratingElement{
                 display: flex;
                 justify-content: flex-end;
                 width: 500px;
                 height: 40px;
-                margin-right: 90px;
+                margin-right: 120px;
                 &__rating-star{
                     display: flex;
                     width: 30px;
@@ -116,13 +117,17 @@
     }
     &__info{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin:0 20px 0 20px;
         &__details{
+            display: flex;
             width: 582px;
+            height: 52px;
             background-color: #ff6060;
+            align-items: center;
             color: white;
             border-radius: 10px;
+            margin: 0 70px 0 60px;
             &__dropdown{
                 display: flex;
                 justify-content: space-between;

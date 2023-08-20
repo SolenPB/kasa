@@ -312,7 +312,7 @@ body {
   height: 77px;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 75px;
 }
 .slide__title-host__slide-title__title-location {
   font-size: 36px;
@@ -326,6 +326,7 @@ body {
   height: 64px;
   display: flex;
   align-items: center;
+  margin-left: 140px;
 }
 .slide__title-host__host__host-name {
   margin-right: 10px;
@@ -340,14 +341,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0 0 20px;
+  margin: 20px 0 0 75px;
 }
 .slide__tags-rating__rating__ratingElement {
   display: flex;
   justify-content: flex-end;
   width: 500px;
   height: 40px;
-  margin-right: 90px;
+  margin-right: 120px;
 }
 .slide__tags-rating__rating__ratingElement__rating-star {
   display: flex;
@@ -368,14 +369,18 @@ body {
 }
 .slide__info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 20px 0 20px;
 }
 .slide__info__details {
+  display: flex;
   width: 582px;
+  height: 52px;
   background-color: #ff6060;
+  align-items: center;
   color: white;
   border-radius: 10px;
+  margin: 0 70px 0 60px;
 }
 .slide__info__details__dropdown {
   display: flex;
