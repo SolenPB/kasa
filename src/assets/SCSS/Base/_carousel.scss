@@ -122,19 +122,16 @@
         display: flex;
         justify-content: space-between;
         margin-left: 70px;
-        &__details{
-            display: flex;
-            width: 582px;
-            background-color: #ff6060;
-            color: white;
-            border-radius: 10px;
-            margin: 20px 0 20px 0;
+        &__details{  
             &__dropdown{
                 display: flex;
-                justify-content: space-between;
-                padding-left: 30px;
+                flex-wrap: wrap;
+                width: 582px;
+                background-color: #ff6060;
+                color: white;
+                border-radius: 10px;
                 &__title{
-                    width: 530px;
+                    width: 570px;
                     display: flex;
                     justify-content: space-between;
                     padding-left: 20px;
@@ -143,6 +140,7 @@
                     background-color: #f6f6f6;
                     color: #ff6060;
                     border-radius: 0 0 10px 10px;
+                    padding-left: 20px;
                 }
             }
         }
