@@ -26,7 +26,11 @@
     margin: 20px 0 0 20px;
   }
   .header__nav-list {
+    width: 150px;
     font-size: 12px;
+  }
+  .logo svg {
+    width: 145px;
   }
 }
 * {
