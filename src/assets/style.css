@@ -343,7 +343,7 @@ body {
   right: 720px;
 }
 .slide__title-host {
-  width: 1240px;
+  width: 1330px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -367,7 +367,7 @@ body {
   height: 64px;
   display: flex;
   align-items: center;
-  margin-left: 140px;
+  margin-left: 240px;
 }
 .slide__title-host__host__host-name {
   margin-right: 10px;
