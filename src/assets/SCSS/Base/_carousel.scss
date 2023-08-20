@@ -1,5 +1,5 @@
 .slide{
-    width: 1400px;
+    width: 1440px;
     height: 643px;
     display: flex;
     flex-direction: column;
@@ -21,10 +21,10 @@
                 z-index: 5;
             }
             &__next{
-                right: 105px;
+                right: 150px;
             }
             &__previous{
-                left: 85px;
+                left: 80px;
             }
             &__carousel-pictures{
                 position: relative;
@@ -33,7 +33,7 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 15px;
-                margin-right: 20px;
+                margin-right: 50px;
                 z-index: 3;
             }
             &__counter{
@@ -42,7 +42,7 @@
                 font-size: 18px;
                 z-index: 10;
                 top: 180px;
-                right: 520px;
+                right: 720px;
             }
             
         }

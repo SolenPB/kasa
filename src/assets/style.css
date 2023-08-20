@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0 40px 0;
+  margin: 20px 0 40px 75px;
 }
 .header__nav-list {
   width: 300px;
@@ -255,7 +255,7 @@ body {
 }
 
 .slide {
-  width: 1400px;
+  width: 1440px;
   height: 643px;
   display: flex;
   flex-direction: column;
@@ -278,10 +278,10 @@ body {
   z-index: 5;
 }
 .slide__slide-pictures__carousel__next {
-  right: 105px;
+  right: 150px;
 }
 .slide__slide-pictures__carousel__previous {
-  left: 85px;
+  left: 80px;
 }
 .slide__slide-pictures__carousel__carousel-pictures {
   position: relative;
@@ -290,7 +290,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-  margin-right: 20px;
+  margin-right: 50px;
   z-index: 3;
 }
 .slide__slide-pictures__carousel__counter {
@@ -299,7 +299,7 @@ body {
   font-size: 18px;
   z-index: 10;
   top: 180px;
-  right: 520px;
+  right: 720px;
 }
 .slide__title-host {
   width: 1240px;
