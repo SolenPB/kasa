@@ -24,12 +24,12 @@ function Collapse(props){
         divEnfant : "slide__info__details__dropdown",
         divEnfant2 : "slide__info__details__dropdown__text"}
     ) : (
-        {divParent : "menu",
+        {divParent : "about-menu",
         divEnfant : "menu__menu-description",
         divEnfant2 : "menu__menu-description__text"}
     )
     return(
-        <div>
+        <div className={style.divParent}>
         {isOpenDrop ? (
             <div className={style.divParent}>
                 <div className={style.divEnfant}>
