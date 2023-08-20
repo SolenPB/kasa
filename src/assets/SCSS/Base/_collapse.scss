@@ -1,23 +1,22 @@
-.menu{
-    margin-bottom: 40px;
-    &__menu-description{
+.about-menu{
+    &__dropdown{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
         width: 1023px;
-        height: 52px;
         background-color: #ff6060;
         color: white;
         border-radius: 10px;
-        &__text{
-            width: 1013px;
-            background-color: #F6F6F6;
-            color: #ff6060;
-            padding: 20px 0 20px 10px;
-            border-radius: 0 0 10px 10px;
+        margin: 20px 0 20px 0;
+        &__title{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
         }
-        &__text p {
-            margin: 0;
+        &__text{
+            background-color: #f6f6f6;
+            color: #ff6060;
+            border-radius: 0 0 10px 10px;
+            padding-left: 20px;
         }
     }
 }

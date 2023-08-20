@@ -180,28 +180,25 @@ body {
   font-size: 18px;
 }
 
-.menu {
-  margin-bottom: 40px;
-}
-.menu__menu-description {
+.about-menu__dropdown {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   width: 1023px;
-  height: 52px;
   background-color: #ff6060;
   color: white;
   border-radius: 10px;
+  margin: 20px 0 20px 0;
 }
-.menu__menu-description__text {
-  width: 1013px;
-  background-color: #F6F6F6;
+.about-menu__dropdown__title {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.about-menu__dropdown__text {
+  background-color: #f6f6f6;
   color: #ff6060;
-  padding: 20px 0 20px 10px;
   border-radius: 0 0 10px 10px;
-}
-.menu__menu-description__text p {
-  margin: 0;
+  padding-left: 20px;
 }
 
 .list-button {
