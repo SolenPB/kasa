@@ -118,22 +118,26 @@
         }
     }
     &__info{
+        width: 1260px;
         display: flex;
-        justify-content: space-around;
-        margin:0 20px 0 20px;
+        justify-content: space-between;
+        margin-left: 70px;
         &__details{
             display: flex;
             width: 582px;
-            height: 52px;
             background-color: #ff6060;
-            align-items: center;
             color: white;
             border-radius: 10px;
-            margin: 0 70px 0 60px;
+            margin: 20px 0 20px 0;
             &__dropdown{
                 display: flex;
                 justify-content: space-between;
                 padding-left: 30px;
+                &__title{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 20px;
+                }
                 &__text{
                     background-color: #f6f6f6;
                     color: #ff6060;
