@@ -410,7 +410,13 @@ body {
   border: 1px solid #ff6060;
   border-radius: 20px;
 }
-.slide__details__dropdown {
+.slide__info {
+  width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 40px 70px;
+}
+.slide__info__details__dropdown {
   display: flex;
   flex-direction: column;
   width: 582px;
@@ -418,12 +424,12 @@ body {
   color: white;
   border-radius: 10px;
 }
-.slide__details__dropdown__title {
+.slide__info__details__dropdown__title {
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
 }
-.slide__details__dropdown__text {
+.slide__info__details__dropdown__text {
   background-color: #f6f6f6;
   color: #ff6060;
   padding-left: 20px;

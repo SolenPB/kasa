@@ -63,11 +63,11 @@ function Slider(props) {
             <RatingScale rating={dataFiltered.rating}/>
           </div>
         </div>
-        <div>
+        <div className="slide__info">
           <Collapse title="Description" description={dataFiltered.description} />
-          <Collapse title="Equipements" description={Equipments(dataFiltered.equipments)} />
-          <Footer />
+          <Collapse title="Equipements" description={Equipments(dataFiltered.equipments)} /> 
         </div>
+        <Footer />
       </div>
     )  
 }  
