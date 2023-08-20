@@ -21,12 +21,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 1080px;
+        width: 1023px;
         height: 52px;
         background-color: #ff6060;
         color: white;
         border-radius: 10px;
-
+        &__text{
+            width: 1013px;
+            background-color: #F6F6F6;
+            color: #ff6060;
+            padding: 20px 0 20px 10px;
+            border-radius: 0 0 10px 10px;
+        }
+        &__text p {
+            margin: 0;
+        }
     }
 }
 .list-button {
