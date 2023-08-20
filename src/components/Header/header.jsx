@@ -21,7 +21,6 @@ function Header() {
                         divEnfant2 : "header__nav-list__inactive"};
         }
 
-    console.log(nav);
     return(
     <div className="header">
         <Logo />

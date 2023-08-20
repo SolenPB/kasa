@@ -410,31 +410,13 @@ body {
   border: 1px solid #ff6060;
   border-radius: 20px;
 }
-.slide__info {
-  width: 1260px;
+.slide__info__details {
   display: flex;
-  justify-content: space-between;
-  margin-left: 70px;
+  width: 1340px;
 }
 .slide__info__details__dropdown {
   display: flex;
-  flex-wrap: wrap;
   width: 582px;
-  background-color: #ff6060;
-  color: white;
-  border-radius: 10px;
-}
-.slide__info__details__dropdown__title {
-  width: 570px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-}
-.slide__info__details__dropdown__text {
-  background-color: #f6f6f6;
-  color: #ff6060;
-  border-radius: 0 0 10px 10px;
-  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
