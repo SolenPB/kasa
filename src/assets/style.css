@@ -360,6 +360,7 @@ body {
   margin: 0;
 }
 .slide__title-host__slide-title__city-location {
+  margin-top: 10px;
   font-size: 18px;
 }
 .slide__title-host__host {
@@ -395,6 +396,7 @@ body {
   display: flex;
   width: 30px;
   height: 30px;
+  margin-right: 5px;
 }
 .slide__tags-rating__tags {
   display: flex;
