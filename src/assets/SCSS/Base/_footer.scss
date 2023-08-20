@@ -9,3 +9,12 @@
     background-color: black;
     padding-top: 20px;
 }
+@media screen and (max-width: 375px){
+    .footer{
+        width: 375px;
+        &__footer-title{
+            width: 100px;
+            font-size: 12px;
+        }
+    }
+}
