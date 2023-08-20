@@ -4,11 +4,11 @@ import { useParams } from "react-router-dom";
 
 function Collapse(props){
     const[isOpenDrop, setIsOpenDrop] = useState(false);
-//Fonctions pour les ouvertures 
+//Fonction pour les ouvertures 
     function OpenDrop(){
         setIsOpenDrop(true);
     }
-//Fonctions pour les fermetures 
+//Fonction pour les fermetures 
     function ClosedDrop(){
         setIsOpenDrop(false);
     }
