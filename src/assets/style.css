@@ -430,6 +430,7 @@ body {
   padding-left: 30px;
 }
 .slide__info__details__dropdown__title {
+  width: 530px;
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
