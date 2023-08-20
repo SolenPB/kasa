@@ -127,7 +127,7 @@
     font-size: 24px;
     margin: 0;
     top: 85px;
-    right: 100px;
+    left: -5px;
   }
   .title-gallery__sea {
     width: 100%;
@@ -147,7 +147,7 @@
     height: 255px;
   }
   .gallery__gallery-cards__overlay {
-    bottom: 10px;
+    bottom: 0px;
   }
   .gallery__gallery-cards__title-card {
     bottom: 50px;

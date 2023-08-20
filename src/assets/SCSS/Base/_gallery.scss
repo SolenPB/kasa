@@ -92,7 +92,7 @@
             font-size: 24px;
             margin: 0;
             top: 85px;
-            right: 100px;
+            left: -5px;
         }
         &__sea{
             width: 100%;
@@ -111,7 +111,7 @@
             width: 100%;
             height: 255px;
             &__overlay{
-                bottom: 10px;
+                bottom: 0px;
             }
             &__title-card{
                 bottom: 50px;
