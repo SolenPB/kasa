@@ -20,6 +20,14 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 375px) {
+  .header {
+    width: 325px;
+  }
+  .header__nav-list {
+    font-size: 12px;
+  }
+}
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -34,7 +42,7 @@
   border-radius: 25px;
   margin-left: 75px;
 }
-.title-gallery .title-sea {
+.title-gallery__title-sea {
   width: 100%;
   height: 100%;
   color: white;
@@ -45,7 +53,7 @@
   text-align: center;
   z-index: 15;
 }
-.title-gallery .sea {
+.title-gallery__sea {
   width: 1240px;
   height: 223px;
   border-radius: 25px;
@@ -88,7 +96,6 @@
   height: 340px;
   border-radius: 10px;
   object-fit: cover;
-  z-index: 0;
 }
 .gallery__gallery-cards__overlay {
   position: relative;
@@ -97,7 +104,6 @@
   height: 40px;
   border-radius: 0 0 10px 10px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  z-index: 10;
 }
 .gallery__gallery-cards__title-card {
   display: flex;
@@ -106,11 +112,40 @@
   width: 85%;
   height: 30px;
   font-size: 18px;
-  z-index: 25;
   bottom: 90px;
   margin-left: 20px;
 }
 
+@media screen and (max-width: 375px) {
+  .title-gallery {
+    width: 305px;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+  .title-gallery__title-sea {
+    width: 190px;
+    font-size: 24px;
+    margin: 0;
+    top: 85px;
+    right: 100px;
+  }
+  .title-gallery__sea {
+    width: 100%;
+    height: 111px;
+  }
+  .gallery {
+    width: 335px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: none;
+    margin: 0 0 20px 20px;
+    padding: 0;
+  }
+  .gallery__gallery-cards {
+    width: 100%;
+    height: 255px;
+  }
+}
 body {
   max-width: 1400px;
   margin: auto;

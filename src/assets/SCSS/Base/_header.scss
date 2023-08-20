@@ -19,3 +19,12 @@
         }
     }
 }
+
+@media screen and (max-width: 375px){
+    .header{
+        width: 325px;
+        &__nav-list{
+            font-size: 12px;
+        }
+    }
+}
