@@ -410,11 +410,10 @@ body {
   border: 1px solid #ff6060;
   border-radius: 20px;
 }
-.slide__info__details {
+.slide__details {
   display: flex;
-  width: 1340px;
 }
-.slide__info__details__dropdown {
+.slide__details__dropdown {
   display: flex;
   width: 582px;
 }
