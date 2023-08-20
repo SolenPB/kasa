@@ -22,28 +22,30 @@ function Collapse(props){
     const style = pages.id ? (
         {divParent : "slide__info__details",
         divEnfant : "slide__info__details__dropdown",
+        divEnfant1 : "slide__info__details__dropdown__title",
         divEnfant2 : "slide__info__details__dropdown__text"}
     ) : (
         {divParent : "about-menu",
-        divEnfant : "menu__menu-description",
-        divEnfant2 : "menu__menu-description__text"}
+        divEnfant : "about-menu__dropdown",
+        divEnfant1 : "about-menu__dropdown__title",
+        divEnfant2 : "about-menu__dropdown__text"}
     )
     return(
         <div className={style.divParent}>
         {isOpenDrop ? (
-            <div className={style.divParent}>
-                <div className={style.divEnfant}>
+            <div className={style.divEnfant}>
+                <div className={style.divEnfant1}>
                     <h2>{props.title}</h2>
                     <button className="list-button__action-button__active" onClick={() => ClosedDrop()}><Up /></button>
                 </div>
-            <div className={style.divEnfant2}>
-                <p>{props.description}</p>
-            </div>
+                <div className={style.divEnfant2}>
+                    <p>{props.description}</p>
+                </div>
             </div>
 
         ) : (
-            <div className={style.divParent}>
-                <div className={style.divEnfant}>
+            <div className={style.divEnfant}>
+                <div className={style.divEnfant1}>
                     <h2>{props.title}</h2>
                     <button className="list-button__action-button__inactive" onClick={() => OpenDrop()}><Up /></button>
                 </div>
