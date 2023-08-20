@@ -138,19 +138,19 @@
     flex-direction: column;
     flex-wrap: nowrap;
     background: none;
-    margin: 400px 0 300px 20px;
+    margin: 450px 0 350px 20px;
     padding: 0;
   }
   .gallery__gallery-cards {
     position: relative;
     width: 100%;
-    height: 255px;
+    height: 275px;
   }
   .gallery__gallery-cards__overlay {
-    bottom: 10px;
+    bottom: 27px;
   }
   .gallery__gallery-cards__title-card {
-    bottom: 50px;
+    bottom: 70px;
   }
 }
 body {
