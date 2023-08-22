@@ -1,6 +1,5 @@
 .slide{
     width: 1440px;
-    height: 643px;
     display: flex;
     flex-direction: column;
     color: #ff6060;
@@ -17,6 +16,7 @@
             background: none;
             color: white;
             z-index: 5;
+            cursor: pointer;
         }
         &__next{
             right: 150px;
@@ -118,6 +118,7 @@
 .info{
     width: 1250px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin:0 0 30px 55px;
 }
@@ -142,6 +143,7 @@
         color: #ff6060;
         border-radius: 0 0 10px 10px;
         padding-left: 20px;
+        margin-bottom: 20px;
     }
 }
         

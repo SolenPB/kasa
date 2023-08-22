@@ -26,9 +26,9 @@ function Collapse(props){
         }
     ) : (
         {divParent : "about-menu",
-        divEnfant : "about-menu__dropdown",
-        divEnfant1 : "about-menu__dropdown__title",
-        divEnfant2 : "about-menu__dropdown__text"}
+        divEnfant : "about-menu__dropdown__title",
+        divEnfant1 : "about-menu__dropdown__text",
+        }
     )
     return(
         <div>

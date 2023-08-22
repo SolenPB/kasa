@@ -51,7 +51,7 @@ export default function Slider(props) {
       {note.map((data, index) =>
         { 
   ;        return(
-          <span key={index} className="summary__host-rating__rating__ratingElement__rating-star">
+          <span key={index} className="summaryt__host-rating__rating__ratingElement__rating-star">
             {data}
           </span>
         )}
@@ -98,12 +98,14 @@ export default function Slider(props) {
         </div>
       </div>
 
+      
       <div className="info">
         <Collapse title="Description" description={dataFiltered.description} />
         <Collapse title="Equipements" description={Equipments(dataFiltered.equipments)} /> 
       </div>
-        <Footer />
       
+      <Footer />
     </div>
+      
     )
 }
