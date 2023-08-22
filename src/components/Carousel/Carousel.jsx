@@ -18,7 +18,7 @@ function Carousel(props){
 
   return(
     <div className="slide__carousel">
-        <button className="slide__carousel__btn-scroll slide__slide-pictures__carousel__previous" onClick={Previous}><ChevronLeft/></button>
+        <button className="slide__carousel__btn-scroll slide__carousel__previous" onClick={Previous}><ChevronLeft/></button>
           <img src={props.pictures[index]} alt="" className="slide__carousel__carousel-pictures"/>
           <span className="slide__carousel__counter">{index +1}/{length}</span>
         <button className="slide__carousel__btn-scroll slide__carousel__next"onClick={Next}><ChevronRight /></button>
