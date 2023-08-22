@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-left: 75px;
     &__title-sea {
         width: 100%;
@@ -85,7 +85,7 @@
 @media screen and (max-width: 375px){
     .title-gallery{
         width: 255px;
-        border-radius: 10px;
+        border-radius: 5px;
         margin-left: 60px;
         &__title-sea{
             width: 190px;

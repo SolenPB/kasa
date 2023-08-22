@@ -4,7 +4,7 @@ import RatingScale from "../../components/Carousel/Rating";
 import Collapse from "../../components/Collapse/collapse";
 import Footer from "../../components/Footer/footer"
 
-function Slider(props) {
+export default function Slider(props) {
     const data = require('../../datas/destination.json');
     const filter = useParams();
 
@@ -29,28 +29,21 @@ function Slider(props) {
     }
     return(
     <div className="slide">
-        <div className="slide-pictures">
-            <Carousel pictures={dataFiltered.pictures}/>
-        </div>
 
-        <div className="slide__title-host">
-          <div className="slide__title-host__slide-title">
-            <h2 className="slide__title-host__slide-title__title-location">{dataFiltered.title}</h2>
-            <span className="slide__title-host__slide-title__city-location">{dataFiltered.location} </span>
+      <Carousel pictures={dataFiltered.pictures}/>
+
+      <div className="slide__summary">
+        <div className="slide__summary__sutitle-tags">
+          <div className="slide__summarytitle-tags__slide-title">
+            <h2 className="slide__title-tags__slide-title__title-location">{dataFiltered.title}</h2>
+            <span className="slide__title-tags__slide-title__city-location">{dataFiltered.location} </span>
           </div>
 
-          <div className="slide__title-host__host">
-            <span className="slide__title-host__host__host-name">{dataFiltered.host.name}</span>
-            <img src={dataFiltered.host.picture} alt="" className="slide__title-host__host__host-picture"/>
-          </div>
-        </div>
-
-        <div className="slide__tags-rating">
-          <div className="slide__tags-rating__tags">
+          <div className="slide__title-tags__tags">
           {dataFiltered.tags.map((data, index) =>
             {
               return(
-                <span key={index} className="slide__tags-rating__tags__tagElement">
+                <span key={index} className="slide__title-tags__tags__tagElement">
                   {data}
                 </span>
               )
@@ -58,19 +51,25 @@ function Slider(props) {
           )
           }
           </div>
+        </div>
 
-          <div className="slide__tags-rating__rating">
+        <div className="slide__host-rating">
+        <div className="slide__host-rating__host">
+            <span className="slide__host-rating__host__host-name">{dataFiltered.host.name}</span>
+            <img src={dataFiltered.host.picture} alt="" className="slide__host-rating__host__host-picture"/>
+          </div>
+
+          <div className="slide__host-rating__rating">
             <RatingScale rating={dataFiltered.rating}/>
           </div>
         </div>
+
         <div className="slide__info">
           <Collapse title="Description" description={dataFiltered.description} />
           <Collapse title="Equipements" description={Equipments(dataFiltered.equipments)} /> 
         </div>
         <Footer />
       </div>
-    )  
-}  
-
-
-export default Slider
+    </div>
+    )
+}

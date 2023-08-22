@@ -18,11 +18,11 @@ function RatingScale(props){
 
 
   return (
-  <div className="slide__tags-rating__rating__ratingElement">
+  <div className="slide__host-rating__rating__ratingElement">
     {note.map((data, index) =>
       { 
 ;        return(
-        <span key={index} className="slide__tags-rating__rating__ratingElement__rating-star">
+        <span key={index} className="slide__host-rating__rating__ratingElement__rating-star">
           {data}
         </span>
       )}
