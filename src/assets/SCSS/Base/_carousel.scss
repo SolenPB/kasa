@@ -10,7 +10,6 @@
         height: 415px;
         display: flex;
         align-items: center;
-        margin-left: 20px;
         &__btn-scroll{
             position: relative;
             border: none;
@@ -45,29 +44,28 @@
         }
             
     }
-    &__title-tags{
-        width: 1330px;
+}
+.summary{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    &__titleTags{
+        width: 830px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        margin-top: 20px;
-        &__slide-title{
-            width: 635px;
-            height: 77px;
-            display: flex;
-            flex-direction: column;
-            &__title-location{
-                font-size: 36px;
-                margin: 0;
-            }
-            &__city-location{
-                margin-top: 10px;
-                font-size: 18px;
-            }
+        margin: 30px 0 20px 55px;        
+        &__location{
+            font-size: 36px;
+            margin: 0;
         }
+        &__city{
+            margin-top: 10px;
+            font-size: 18px;
+        } 
         &__tags{
-            display: flex;
-            align-items: center;
+        display: flex;
+        align-items: center;
             &__tagElement {
                 background-color: #ff6060;
                 color: white;
@@ -81,6 +79,8 @@
     &__host-rating{
         display: flex;
         flex-direction: column;
+        width: 170px;
+        margin-top: 30px;
         &__host{
             width: 167px;
             height: 64px;
@@ -100,6 +100,7 @@
             display: flex;
             flex-direction: row;
             width: 500px;
+            margin-top: 20px;
             &__ratingElement{
                 display: flex;
                 width: 100%;
@@ -113,38 +114,39 @@
             }
         }
     }
-    &__info{
-        width: 1250px;
+}
+.info{
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 30px 55px;
+}
+.dropdownMenu{
+    display: flex;
+    flex-direction: column;
+    width: 582px;
+    height: 52px;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 10px;
+    &__title{
+        height: 52px;
         display: flex;
         justify-content: space-between;
-        margin: 20px 0 40px 70px;
-        &__details{
-            &__dropdown{
-                display: flex;
-                flex-direction: column;
-                width: 582px;
-                height: 52px;
-                background-color: #ff6060;
-                color: white;
-                border-radius: 10px;
-                &__title{
-                    height: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    padding-left: 20px;
-                }
-                &__text{
-                    background-color: #f6f6f6;
-                    color: #ff6060;
-                    padding-left: 20px;
-                    border-radius: 0 0 10px 10px;
-                    transition: all 1s ease-in-out;
-                }
-            }
-        }
+        align-items: center;
+        padding-left: 20px;
     }
-            
+    &__text{
+        width: 96%;
+        background-color: #f6f6f6;
+        color: #ff6060;
+        border-radius: 0 0 10px 10px;
+        padding-left: 20px;
+    }
 }
+        
+
+            
 @media screen and (max-width: 375px){
     .slide{
         flex-direction: column;
