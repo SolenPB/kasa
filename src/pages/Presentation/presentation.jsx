@@ -1,19 +1,24 @@
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel";
 import Collapse from "../../components/Collapse/collapse";
 import Footer from "../../components/Footer/footer";
 import ActiveStar from "../../assets/active-star";
 import InactiveStar from "../../assets/inactive-star";
 
-export default function Slider(props) {
+
+export default function Slider() {
     const data = require('../../datas/destination.json');
     const filter = useParams();
 
+    const navigate = useNavigate();
     let dataFiltered ="";
 
     for( let i = 0; i < data.length; i++ ){
       if(filter.id === data[i].id) {
         dataFiltered = data[i];
+      } else {
+        navigate("../../components/Header/Error/error", {replace: true})
       }
     }
     function Equipments(dataArray){
