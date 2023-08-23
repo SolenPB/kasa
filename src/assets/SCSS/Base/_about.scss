@@ -50,8 +50,12 @@
 }
 @media screen and (max-width: 375px){
     .about-title{
-        width: 80%;
+        width: 95%;
         height: 111px;
+        &__about-picture{
+            width: 100%;
+            height: 100%;
+        }
     }
     .about-menu{
         width: 355px;
