@@ -84,19 +84,23 @@
 
 @media screen and (max-width: 375px){
     .title-gallery{
-        width: 255px;
+        width: 80%;
         border-radius: 5px;
-        margin-left: 60px;
+        margin-left: 40px;
         &__title-sea{
+            display: flex;
+            text-align: start;
+            white-space: pre-wrap;
             width: 190px;
             font-size: 24px;
             margin: 0;
             top: 85px;
-            left: -5px;
+            left: -55px;
         }
         &__sea{
-            width: 100%;
+            width: 90%;
             height: 111px;
+            border-radius: 10px;
         }
     }
     .gallery{
