@@ -9,6 +9,7 @@ import Destination from './pages/Home/destination';
 import Presentation from './pages/Presentation/presentation';
 import './assets/style.css';
 import Slider from './pages/Presentation/presentation';
+import Footer from './components/Footer/footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,6 @@ root.render(
                     <Route path='/about' element={<About />} />
                     <Route path='*' element={<Error />} />
                 </Routes>
-            
+            <Footer />
     </Router>
 );

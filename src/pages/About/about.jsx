@@ -16,7 +16,6 @@ function About() {
                 <Collapse title="Respect" description={respect} />
                 <Collapse title="Service" description={service} />
                 <Collapse title="Sécurité" description={security} />
-                <Footer />
         </div>         
 )
 }

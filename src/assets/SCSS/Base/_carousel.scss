@@ -121,30 +121,30 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin:0 0 30px 55px;
-}
-.dropdownMenu{
-    display: flex;
-    flex-direction: column;
-    width: 582px;
-    height: 52px;
-    background-color: #ff6060;
-    color: white;
-    border-radius: 10px;
-    &__title{
-        height: 52px;
+    &__dropdown{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 20px;
-    }
-    &__text{
-        width: 96%;
-        background-color: #f6f6f6;
-        color: #ff6060;
-        border-radius: 0 0 10px 10px;
-        padding-left: 20px;
-        margin-bottom: 20px;
-    }
+        flex-direction: column;
+        width: 582px;
+        height: 52px;
+        background-color: #ff6060;
+        color: white;
+        border-radius: 10px;
+        &__title{
+            height: 52px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+        }
+        &__text{
+            width: 96%;
+            background-color: #f6f6f6;
+            color: #ff6060;
+            border-radius: 0 0 10px 10px;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+}
 }
 .equipments{
     list-style-type: none;
@@ -153,46 +153,39 @@
             
 @media screen and (max-width: 375px){
     .slide{
+        width: 408px;
+        height: 225px;
+        &__carousel{
+            height: 100%;
+            margin-top: 20px;
+            &__btn-scroll svg{
+                width: 24px;
+                height: 24px;
+            }
+            &__btn-scroll{
+                width: 24px;
+                height: 24px;
+            }
+            &__carousel-pictures{
+                margin: 0;
+            }
+        }
+    }
+    .summary{
+        width: 355px;
         flex-direction: column;
-        &__slide-pictures{
-            &__carousel{
-                height: 225px;
-                margin: 0;
-                &__counter{
-                    display: none;
-                }
-            }
-        }
-        &__title-host{
-            &__slide-title{
-                margin: 0;
-                &__title-location{
-                    width: 335px;
-                }
-            }
-        }
-        &__tags-rating{
-            width: 335px;
-            flex-direction: column;
-            justify-content: flex-start;
+        &__titleTags{
+            width: 100%;
             margin: 0;
-            &__rating{
-                width: 100%;
-                &__ratingElement{
-                    justify-content: flex-start;
-                }
+            margin: 20px 0 0 25px;
+            &__location{
+                font-size: 18px;
             }
-        }
-        &__info{
-            width: 335px;
-            margin: 20px 0 20px 20px;
-            flex-direction: column;
-            &__details{
-                width: 335px;
-                &__dropdown{
-                    width: 335px;
-                    margin-bottom: 30px;
-                }
+            &__city{
+                font-size: 14px;
+            }
+            &__tags{
+                width: 100%;
             }
         }
     }

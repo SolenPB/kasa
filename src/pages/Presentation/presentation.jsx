@@ -103,13 +103,8 @@ export default function Slider() {
         </div>
       </div>
 
-      
-      <div className="info">
         <Collapse title="Description" description={dataFiltered.description} />
         <Collapse title="Equipements" description={Equipments(dataFiltered.equipments)} /> 
-      </div>
-      
-      <Footer />
     </div>
       
     )
