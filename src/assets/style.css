@@ -486,10 +486,9 @@ body {
 @media screen and (max-width: 375px) {
   .slide {
     width: 408px;
-    height: 225px;
   }
   .slide__carousel {
-    height: 100%;
+    width: 90%;
     margin-top: 20px;
   }
   .slide__carousel__btn-scroll svg {
@@ -500,7 +499,14 @@ body {
     width: 24px;
     height: 24px;
   }
+  .slide__carousel__previous {
+    right: 50px;
+  }
+  .slide__carousel__counter {
+    display: none;
+  }
   .slide__carousel__carousel-pictures {
+    height: 255px;
     margin: 0;
   }
   .summary {
@@ -534,9 +540,6 @@ body {
     width: 335px;
     margin: 0;
     margin: 10px 0 10px 20px;
-  }
-  .footer {
-    margin-top: 530px;
   }
 }
 

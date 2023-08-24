@@ -158,9 +158,8 @@
 @media screen and (max-width: 375px){
     .slide{
         width: 408px;
-        height: 225px;
         &__carousel{
-            height: 100%;
+            width: 90%;
             margin-top: 20px;
             &__btn-scroll svg{
                 width: 24px;
@@ -170,7 +169,14 @@
                 width: 24px;
                 height: 24px;
             }
+            &__previous{
+                right: 50px;
+            }
+            &__counter{
+                display: none;
+            }
             &__carousel-pictures{
+                height: 255px;
                 margin: 0;
             }
         }
@@ -206,9 +212,6 @@
         width: 335px;
         margin: 0;
         margin: 10px 0 10px 20px;
-    }
-    .footer{
-        margin-top: 530px;
     }
 }
 
