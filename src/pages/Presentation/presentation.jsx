@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel";
 import Collapse from "../../components/Collapse/collapse";
-import Footer from "../../components/Footer/footer";
 import ActiveStar from "../../assets/active-star";
 import InactiveStar from "../../assets/inactive-star";
 
