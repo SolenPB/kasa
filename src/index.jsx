@@ -5,7 +5,6 @@ import Home from './pages/Home/home';
 import About from './pages/About/about';
 import Header from './components/Header/header';
 import Error from './components/Header/Error/error';
-import Destination from './pages/Home/destination';
 import Presentation from './pages/Presentation/presentation';
 import './assets/style.css';
 import Slider from './pages/Presentation/presentation';
@@ -17,7 +16,7 @@ root.render(
     <Router>
             <Header />
                 <Routes>
-                    <Route path='/' element={<><Home /><Destination /></>} />
+                    <Route path='/' element={<Home />} />
                     <Route path='/presentation' element={<Presentation />} />
                     <Route path ='/:id'element={<Slider />} />
                     <Route path='/about' element={<About />} />
