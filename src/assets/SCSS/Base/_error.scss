@@ -6,17 +6,16 @@
     color: #ff6060;
     margin: 100px 0 100px 0;
 
-    &__errorTitle {
-        color: #ff6060;
+    &__title {
         font-size: 288px;
         margin: 0;
     }
 
-    &__errorMessage {
+    &__message {
         font-size: 36px;
     }
 
-    &__errorReturn {
+    &__return {
         color: #ff6060;
         font-size: 18px;
     }
@@ -24,15 +23,20 @@
 @media screen and (max-width: 375px) {
     .error{
         margin: 0;
-        &__errorTitle{
+        &__title{
             width: 55%;
-            font-size: 120px;
-            margin-top: 50px;
+            font-size: 96px;
+            margin-top: 70px;
+            text-align: center;
         }
-        &__errorMessage{
+        &__message{
             width: 70%;
             font-size: 18px;
             text-align: center;
+            margin-top: 70px;
+        }
+        &__return{
+            margin: 90px 0 50px 0;
         }
     }
 }

@@ -258,15 +258,14 @@ body {
   color: #ff6060;
   margin: 100px 0 100px 0;
 }
-.error__errorTitle {
-  color: #ff6060;
+.error__title {
   font-size: 288px;
   margin: 0;
 }
-.error__errorMessage {
+.error__message {
   font-size: 36px;
 }
-.error__errorReturn {
+.error__return {
   color: #ff6060;
   font-size: 18px;
 }
@@ -275,15 +274,20 @@ body {
   .error {
     margin: 0;
   }
-  .error__errorTitle {
+  .error__title {
     width: 55%;
-    font-size: 120px;
-    margin-top: 50px;
+    font-size: 96px;
+    margin-top: 70px;
+    text-align: center;
   }
-  .error__errorMessage {
+  .error__message {
     width: 70%;
     font-size: 18px;
     text-align: center;
+    margin-top: 70px;
+  }
+  .error__return {
+    margin: 90px 0 50px 0;
   }
 }
 .listButton {
