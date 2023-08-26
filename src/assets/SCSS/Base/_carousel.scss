@@ -159,8 +159,8 @@
     .slide{
         width: 408px;
         &__carousel{
-            width: 90%;
-            margin-top: 20px;
+            width: 95%;
+            height: 300px;
             &__btnScroll svg{
                 width: 24px;
                 height: 24px;
@@ -170,7 +170,7 @@
                 height: 24px;
             }
             &__previous{
-                right: 50px;
+                right: 150px;
             }
             &__counter{
                 display: none;
@@ -178,6 +178,7 @@
             &__carouselPictures{
                 height: 255px;
                 margin: 0;
+                margin-right: 10px;
             }
         }
     }
