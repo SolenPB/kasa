@@ -25,9 +25,9 @@ function Collapse(props){
         divEnfant1 : "info__dropdown__text",
         }
     ) : (
-        {divParent : "about-menu",
-        divEnfant : "about-menu__dropdown__title",
-        divEnfant1 : "about-menu__dropdown__text",
+        {divParent : "aboutMenu",
+        divEnfant : "aboutMenu__dropdown__title",
+        divEnfant1 : "aboutMenu__dropdown__text",
         }
     )
     return(

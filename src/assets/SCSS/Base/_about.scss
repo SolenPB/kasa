@@ -9,17 +9,17 @@
     flex-direction: column;
     align-items: center;
 }
-.about-title{
+.aboutTitle{
     width: 1240px;
     height: 223px;
-    &__about-picture {
+    &__aboutPicture {
         width: 1240px;
         height: 223px;
         object-fit: cover;
         border-radius: 25px;
     }
 }
-.about-menu{
+.aboutMenu{
     display: flex;
     flex-direction: column;
     width: 1023px;
@@ -49,7 +49,7 @@
     margin-top: 30px;
 }
 @media screen and (max-width: 375px){
-    .about-title{
+    .aboutTitle{
         width: 95%;
         height: 111px;
         &__about-picture{
@@ -57,7 +57,7 @@
             height: 100%;
         }
     }
-    .about-menu{
+    .aboutMenu{
         width: 355px;
     }
 }
