@@ -6,16 +6,16 @@
   align-items: center;
   margin: 20px 0 40px 75px;
 }
-.header__nav-list {
+.header__navList {
   width: 300px;
   display: flex;
   justify-content: space-between;
   font-size: 24px;
 }
-.header__nav-list__active {
+.header__navList__active {
   color: #ff6060;
 }
-.header__nav-list__inactive {
+.header__navList__inactive {
   color: #ff6060;
   text-decoration: none;
 }
@@ -25,7 +25,7 @@
     width: 325px;
     margin: 20px 0 0 20px;
   }
-  .header__nav-list {
+  .header__navList {
     width: 150px;
     font-size: 12px;
     text-transform: uppercase;
@@ -166,13 +166,6 @@
 body {
   max-width: 1400px;
   margin: auto;
-}
-
-.header__nav-link__about {
-  text-decoration: underline;
-  color: #ff6060;
-  font-size: 18px;
-  padding-left: 70px;
 }
 
 .about {

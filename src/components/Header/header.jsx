@@ -8,17 +8,17 @@ function Header() {
 
         let styleChanged = nav.pathname;
         if(styleChanged === "/about"){
-            navStyle = {divParent : "header__nav-list",
-                        divEnfant : "header__nav-list__inactive",
-                        divEnfant2 : "header__nav-list__active"};
+            navStyle = {divParent : "header__navList",
+                        divEnfant : "header__navList__inactive",
+                        divEnfant2 : "header__navList__active"};
         } else if(styleChanged === "/"){
-            navStyle = {divParent : "header__nav-list",
-                        divEnfant : "header__nav-list__active",
-                        divEnfant2 : "header__nav-list__inactive"};
+            navStyle = {divParent : "header__navList",
+                        divEnfant : "header__navList__active",
+                        divEnfant2 : "header__navList__inactive"};
         } else {
-            navStyle = {divParent : "header__nav-list",
-                        divEnfant : "header__nav-list__inactive",
-                        divEnfant2 : "header__nav-list__inactive"};
+            navStyle = {divParent : "header__navList",
+                        divEnfant : "header__navList__inactive",
+                        divEnfant2 : "header__navList__inactive"};
         }
 
     return(

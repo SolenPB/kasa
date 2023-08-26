@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px 0 40px 75px;
-    &__nav-list{
+    &__navList{
         width: 300px;
         display: flex;
         justify-content: space-between;
@@ -24,7 +24,7 @@
     .header{
         width: 325px;
         margin: 20px 0 0 20px;
-        &__nav-list{
+        &__navList{
             width: 150px;
             font-size: 12px;
             text-transform: uppercase;
