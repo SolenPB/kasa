@@ -415,10 +415,10 @@ body {
   display: flex;
   align-items: center;
 }
-.summary__hostRating__host__host-name {
+.summary__hostRating__host__hostName {
   margin-right: 10px;
 }
-.summary__hostRating__host__host-picture {
+.summary__hostRating__host__hostPicture {
   width: 64px;
   height: 64px;
   object-fit: cover;
@@ -491,11 +491,11 @@ body {
     width: 90%;
     margin-top: 20px;
   }
-  .slide__carousel__btn-scroll svg {
+  .slide__carousel__btnScroll svg {
     width: 24px;
     height: 24px;
   }
-  .slide__carousel__btn-scroll {
+  .slide__carousel__btnScroll {
     width: 24px;
     height: 24px;
   }
@@ -505,7 +505,7 @@ body {
   .slide__carousel__counter {
     display: none;
   }
-  .slide__carousel__carousel-pictures {
+  .slide__carousel__carouselPictures {
     height: 255px;
     margin: 0;
   }
@@ -527,7 +527,7 @@ body {
   .summary__titleTags__tags {
     width: 100%;
   }
-  .summary__host-rating {
+  .summary__hostRating {
     width: 100%;
     margin-left: 28px;
   }

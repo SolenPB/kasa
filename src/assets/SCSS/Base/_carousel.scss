@@ -86,10 +86,10 @@
             height: 64px;
             display: flex;
             align-items: center;
-            &__host-name{
+            &__hostName{
                 margin-right: 10px;
             }
-            &__host-picture{
+            &__hostPicture{
                 width: 64px;
                 height: 64px;
                 object-fit: cover;
@@ -161,11 +161,11 @@
         &__carousel{
             width: 90%;
             margin-top: 20px;
-            &__btn-scroll svg{
+            &__btnScroll svg{
                 width: 24px;
                 height: 24px;
             }
-            &__btn-scroll{
+            &__btnScroll{
                 width: 24px;
                 height: 24px;
             }
@@ -175,7 +175,7 @@
             &__counter{
                 display: none;
             }
-            &__carousel-pictures{
+            &__carouselPictures{
                 height: 255px;
                 margin: 0;
             }
@@ -198,7 +198,7 @@
                 width: 100%;
             }
         }
-        &__host-rating{
+        &__hostRating{
             width: 100%;
             margin-left: 28px;
         }

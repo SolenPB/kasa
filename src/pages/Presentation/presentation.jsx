@@ -92,8 +92,8 @@ export default function Slider() {
 
         <div className="summary__hostRating">
         <div className="summary__hostRating__host">
-            <span className="summary__hostRating__host__host-name">{dataFiltered.host.name}</span>
-            <img src={dataFiltered.host.picture} alt="" className="summary__hostRating__host__host-picture"/>
+            <span className="summary__hostRating__host__hostName">{dataFiltered.host.name}</span>
+            <img src={dataFiltered.host.picture} alt="" className="summary__hostRating__host__hostPicture"/>
           </div>
 
           <div className="summary__hostRating__rating">
