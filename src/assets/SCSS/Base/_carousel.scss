@@ -9,7 +9,7 @@
         height: 415px;
         display: flex;
         align-items: center;
-        &__btn-scroll{
+        &__btnScroll{
             position: relative;
             border: none;
             font-size: 80px;
@@ -24,7 +24,7 @@
         &__previous{
             left: 80px;
         }
-        &__carousel-pictures{
+        &__carouselPictures{
             position: relative;
             display: inline-block;
             width: 100%;

@@ -337,7 +337,7 @@ body {
   display: flex;
   align-items: center;
 }
-.slide__carousel__btn-scroll {
+.slide__carousel__btnScroll {
   position: relative;
   border: none;
   font-size: 80px;
@@ -352,7 +352,7 @@ body {
 .slide__carousel__previous {
   left: 80px;
 }
-.slide__carousel__carousel-pictures {
+.slide__carousel__carouselPictures {
   position: relative;
   display: inline-block;
   width: 100%;

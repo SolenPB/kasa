@@ -55,7 +55,7 @@ export default function Slider() {
       {note.map((data, index) =>
         { 
   ;        return(
-          <span key={index} className="summaryt__host-rating__rating__ratingElement__rating-star">
+          <span key={index} className="summary__host-rating__rating__ratingElement__rating-star">
             {data}
           </span>
         )}
