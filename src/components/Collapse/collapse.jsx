@@ -36,7 +36,7 @@ function Collapse(props){
             <div className={style.divParent}>
                 <div className={style.divEnfant}>
                     <h2>{props.title}</h2>
-                    <button className="list-button__action-button__active" onClick={() => ClosedDrop()}><Up /></button>
+                    <button className="listButton__actionButton__active" onClick={() => ClosedDrop()}><Up /></button>
                 </div>
                 <div className={style.divEnfant1}>
                     <span>{props.description}</span>
@@ -47,7 +47,7 @@ function Collapse(props){
             <div className={style.divParent}>
                 <div className={style.divEnfant}>
                     <h2>{props.title}</h2>
-                    <button className="list-button__action-button__inactive" onClick={() => OpenDrop()}><Up /></button>
+                    <button className="listButton__actionButton__inactive" onClick={() => OpenDrop()}><Up /></button>
                 </div>
             </div>
         )}

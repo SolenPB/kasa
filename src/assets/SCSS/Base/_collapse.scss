@@ -1,4 +1,4 @@
-.list-button {
+.listButton {
     display: flex;
     justify-content: space-between;
     width: 1023px;
@@ -6,11 +6,11 @@
     color: white;
     border-radius: 5px;
 
-    &__list-title {
+    &__listTitle {
         padding-left: 10px;
     }
 
-    &__action-button{
+    &__actionButton{
         &__inactive{
             width: 32px;
             height: 24px;

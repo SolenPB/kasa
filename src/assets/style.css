@@ -278,7 +278,7 @@ body {
   font-size: 18px;
 }
 
-.list-button {
+.listButton {
   display: flex;
   justify-content: space-between;
   width: 1023px;
@@ -286,10 +286,10 @@ body {
   color: white;
   border-radius: 5px;
 }
-.list-button__list-title {
+.listButton__listTitle {
   padding-left: 10px;
 }
-.list-button__action-button__inactive {
+.listButton__actionButton__inactive {
   width: 32px;
   height: 24px;
   border: none;
@@ -301,7 +301,7 @@ body {
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
-.list-button__action-button__active {
+.listButton__actionButton__active {
   width: 32px;
   height: 24px;
   border: none;
