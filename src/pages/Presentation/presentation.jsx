@@ -51,11 +51,11 @@ export default function Slider() {
   
     return (
 
-    <div className="summary__host-rating__rating__ratingElement">
+    <div className="summary__hostRating__rating__ratingElement">
       {note.map((data, index) =>
         { 
   ;        return(
-          <span key={index} className="summary__host-rating__rating__ratingElement__rating-star">
+          <span key={index} className="summary__hostRating__rating__ratingElement__rating-star">
             {data}
           </span>
         )}
@@ -90,13 +90,13 @@ export default function Slider() {
           </div>
         </div>
 
-        <div className="summary__host-rating">
-        <div className="summary__host-rating__host">
-            <span className="summary__host-rating__host__host-name">{dataFiltered.host.name}</span>
-            <img src={dataFiltered.host.picture} alt="" className="summary__host-rating__host__host-picture"/>
+        <div className="summary__hostRating">
+        <div className="summary__hostRating__host">
+            <span className="summary__hostRating__host__host-name">{dataFiltered.host.name}</span>
+            <img src={dataFiltered.host.picture} alt="" className="summary__hostRating__host__host-picture"/>
           </div>
 
-          <div className="summary__host-rating__rating">
+          <div className="summary__hostRating__rating">
             <RatingScale rating={dataFiltered.rating}/>
           </div>
         </div>
