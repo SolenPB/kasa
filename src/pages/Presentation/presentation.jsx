@@ -51,11 +51,11 @@ export default function Slider() {
   
     return (
 
-    <div className="summary__hostRating__rating__ratingElement">
+    <div className="summary__hostRating__rating">
       {note.map((data, index) =>
         { 
   ;        return(
-          <span key={index} className="summary__hostRating__rating__ratingElement__rating-star">
+          <span key={index} className="summary__hostRating__rating__rating-star">
             {data}
           </span>
         )}

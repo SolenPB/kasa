@@ -444,12 +444,7 @@ body {
   width: 500px;
   margin-top: 20px;
 }
-.summary__hostRating__rating__ratingElement {
-  display: flex;
-  width: 100%;
-  height: 40px;
-}
-.summary__hostRating__rating__ratingElement__rating-star {
+.summary__hostRating__rating__rating-star {
   display: flex;
   width: 30px;
   height: 30px;
