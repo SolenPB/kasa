@@ -9,7 +9,7 @@ return(<>
     <div className="gallery">
            {element.map((data, index) => {
              return <>
-              <Link key={index} className="gallery__nav-card" to={data.id} >
+              <Link key={index} className="gallery__navCard" to={data.id} >
                 <Card title={data.title} picture={data.cover} />
               </Link>
              </>

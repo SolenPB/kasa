@@ -1,4 +1,4 @@
-.title-gallery {
+.titleGallery {
     width: 1240px;
     height: 223px;
     display: flex;
@@ -7,7 +7,7 @@
     flex-direction: column;
     border-radius: 20px;
     margin-left: 75px;
-    &__title-sea {
+    &__titleSea {
         width: 100%;
         height: 100%;
         color: white;
@@ -41,11 +41,11 @@
     border-radius: 25px;
     padding-top: 40px;
     margin: 70px 0 40px 75px;
-    &__nav-card{
+    &__navCard{
         display: inline-block;
         text-decoration: none;
     }
-    &__gallery-cards {
+    &__galleryCards {
         width: 340px;
         height: 410px;
         display: flex;
@@ -69,7 +69,7 @@
             border-radius: 0 0 10px 10px;
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
         }
-        &__title-card {
+        &__titleCard {
             display: flex;
             position: relative;
             align-items: flex-end;
@@ -83,11 +83,11 @@
 }
 
 @media screen and (max-width: 375px){
-    .title-gallery{
+    .titleGallery{
         width: 80%;
         border-radius: 5px;
         margin-left: 40px;
-        &__title-sea{
+        &__titleSea{
             display: flex;
             text-align: start;
             white-space: pre-wrap;
@@ -110,14 +110,14 @@
         background: none;
         margin: 450px 0 350px 20px;
         padding: 0;
-        &__gallery-cards{
+        &__galleryCards{
             position: relative;
             width: 100%;
             height: 275px;
             &__overlay{
                 bottom: 27px;
             }
-            &__title-card{
+            &__titleCard{
                 bottom: 70px;
             }
         }
