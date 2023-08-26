@@ -271,6 +271,21 @@ body {
   font-size: 18px;
 }
 
+@media screen and (max-width: 375px) {
+  .error {
+    margin: 0;
+  }
+  .error__errorTitle {
+    width: 55%;
+    font-size: 120px;
+    margin-top: 50px;
+  }
+  .error__errorMessage {
+    width: 70%;
+    font-size: 18px;
+    text-align: center;
+  }
+}
 .listButton {
   display: flex;
   justify-content: space-between;

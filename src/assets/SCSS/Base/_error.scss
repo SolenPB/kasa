@@ -21,3 +21,18 @@
         font-size: 18px;
     }
 }
+@media screen and (max-width: 375px) {
+    .error{
+        margin: 0;
+        &__errorTitle{
+            width: 55%;
+            font-size: 120px;
+            margin-top: 50px;
+        }
+        &__errorMessage{
+            width: 70%;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}
