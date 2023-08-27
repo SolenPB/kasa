@@ -452,11 +452,9 @@ body {
 }
 
 .info {
-  width: 582px;
-  height: 52px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  width: 582px;
   background-color: #ff6060;
   color: white;
   border-radius: 10px;
