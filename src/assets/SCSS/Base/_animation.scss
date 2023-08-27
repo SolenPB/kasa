@@ -1,14 +1,15 @@
 .animation {
     &__down{
-        animation: textDown 1000ms forwards ease-in-out ;
-        transition: all 1000ms;
+        animation: textDown 300ms forwards ease-in-out ;
+        transition: all 300ms;
+        transform-origin: top;
     }
 }
 @keyframes textDown{
     0%{
-        transform: height(0)
+        transform: scaleY(0)
     }
     100%{
-        transform: height(100%);
+        transform: scaleY(100%);
     }
 }

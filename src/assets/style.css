@@ -290,9 +290,6 @@ body {
   color: white;
   border-radius: 5px;
 }
-.listButton__listTitle {
-  padding-left: 10px;
-}
 .listButton__actionButton__inactive {
   width: 32px;
   height: 24px;
@@ -464,6 +461,7 @@ body {
 }
 .info__dropdown {
   display: flex;
+  align-items: center;
 }
 .info__dropdown__title {
   width: 100%;
@@ -475,11 +473,10 @@ body {
 }
 .info__dropdown__text {
   width: 100%;
-  height: 52px;
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 0 0 10px 10px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .info__dropdown__text ul {
   padding: 0;
@@ -554,16 +551,17 @@ body {
   }
 }
 .animation__down {
-  animation: textDown 1000ms forwards ease-in-out;
-  transition: all 1000ms;
+  animation: textDown 300ms forwards ease-in-out;
+  transition: all 300ms;
+  transform-origin: top;
 }
 
 @keyframes textDown {
   0% {
-    transform: height(0);
+    transform: scaleY(0);
   }
   100% {
-    transform: height(100%);
+    transform: scaleY(100%);
   }
 }
 

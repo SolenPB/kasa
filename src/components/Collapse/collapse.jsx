@@ -21,21 +21,21 @@ function Collapse(props){
     const pages = useParams();
     const style = pages.id ? (
         {divParent : "info",
-        divParent1 : "info opened",
         divEnfant : "info__dropdown__title",
-        divEnfant1 : "info__dropdown__text animation__downs",
+        divEnfant1 : "info__dropdown__text animation__down",
         divEnfant2: "animation__down",
         }
     ) : (
         {divParent : "aboutMenu",
         divEnfant : "aboutMenu__dropdown__title",
         divEnfant1 : "aboutMenu__dropdown__text animation__down",
+        divEnfant2: "animation__down",
         }
     )
     return(
         <div>
         {isOpenDrop ? (
-            <div className={style.divParent1}>
+            <div className={style.divParent}>
                 <div className={style.divEnfant}>
                     <h2>{props.title}</h2>
                     <button className="listButton__actionButton__active" onClick={() => ClosedDrop()}><Up /></button>
