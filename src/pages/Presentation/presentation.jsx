@@ -4,22 +4,40 @@ import Carousel from "../../components/Carousel/Carousel";
 import Collapse from "../../components/Collapse/collapse";
 import ActiveStar from "../../assets/active-star";
 import InactiveStar from "../../assets/inactive-star";
+import { useEffect } from "react";
+
 
 
 export default function Slider() {
+
     const data = require('../../datas/destination.json');
     const filter = useParams();
-
+    let dataFiltered ={
+      id : "",
+      pictures : [],
+      host: {},
+      rating: "",
+      equipments: [],
+      tags: [],
+    };
+  function Navigate(){
+    const data = require('../../datas/destination.json');
     const navigate = useNavigate();
-    let dataFiltered ="";
+
+    useEffect(() => {
+      if(!data.id) {
+        navigate("/error", {replace: true});
+      }      
+    })
+  }
 
     for( let i = 0; i < data.length; i++ ){
       if(filter.id === data[i].id) {
         dataFiltered = data[i];
-      } else {
-        navigate("../../components/Header/Error/error", {replace: true})
+        console.log(dataFiltered);
       }
     }
+  
     function Equipments(dataArray){
       return(<ul>
         {dataArray.map((data, index) => 
