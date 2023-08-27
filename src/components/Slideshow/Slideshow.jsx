@@ -2,7 +2,7 @@ import { useState } from "react";
 import ChevronLeft from "../../assets/chevron-left";
 import ChevronRight from "../../assets/chevron-right";
 
-function Carousel(props){
+function Slideshow(props){
   const[index, setIndex] = useState(0);
   const length = props.pictures.length;
 
@@ -32,6 +32,6 @@ function Carousel(props){
   };
 };
 
-export default Carousel
+export default Slideshow
 
 

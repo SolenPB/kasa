@@ -1,6 +1,6 @@
 import { useParams, useNavigate} from "react-router-dom";
 import { useEffect } from "react";
-import Carousel from "../../components/Carousel/Carousel";
+import Slideshow from "../../components/Slideshow/Slideshow";
 import Collapse from "../../components/Collapse/collapse";
 import ActiveStar from "../../assets/active-star";
 import InactiveStar from "../../assets/inactive-star";
@@ -84,7 +84,7 @@ export default function Slider() {
     return(
     <div className="slide">
 
-      <Carousel pictures={dataFiltered.pictures}/>
+      <Slideshow pictures={dataFiltered.pictures}/>
 
       <div className="summary">
         <div className="summary__titleTags">
