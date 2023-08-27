@@ -16,6 +16,7 @@ function Carousel(props){
   setIndex(newIndex >= length ? 0 : newIndex);
   };
 
+  if(length > 1){
   return(
     <div className="slide__carousel">
         <button className="slide__carousel__btnScroll slide__carousel__previous" onClick={Previous}><ChevronLeft/></button>
@@ -24,6 +25,11 @@ function Carousel(props){
         <button className="slide__carousel__btnScroll slide__carousel__next"onClick={Next}><ChevronRight /></button>
     </div>
   );
+  } else {
+    <div className="slide__carousel">
+      <img src={props.pictures[index]} alt="Illustrations des pièces de la location" className="slide__carousel__carouselPictures" />
+    </div>
+  };
 };
 
 export default Carousel
