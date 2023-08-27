@@ -23,7 +23,10 @@ function Header() {
 
     return(
     <div className="header">
-        <Logo />
+        <Link to="/">
+            <Logo />
+        </Link>
+        
         <nav className={navStyle.divParent}>
             <Link className={navStyle.divEnfant} to="/">Accueil</Link>
             <Link className={navStyle.divEnfant2} to="/about">A propos</Link>

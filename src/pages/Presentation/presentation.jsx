@@ -21,6 +21,7 @@ export default function Slider() {
       tags: [],
     };
   function Navigate(){
+    
     const data = require('../../datas/destination.json');
     const navigate = useNavigate();
 
@@ -34,7 +35,6 @@ export default function Slider() {
     for( let i = 0; i < data.length; i++ ){
       if(filter.id === data[i].id) {
         dataFiltered = data[i];
-        console.log(dataFiltered);
       }
     }
   
