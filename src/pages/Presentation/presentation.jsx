@@ -1,11 +1,9 @@
-import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate} from "react-router-dom";
+import { useEffect } from "react";
 import Carousel from "../../components/Carousel/Carousel";
 import Collapse from "../../components/Collapse/collapse";
 import ActiveStar from "../../assets/active-star";
 import InactiveStar from "../../assets/inactive-star";
-import { useEffect } from "react";
-
 
 
 export default function Slider() {
@@ -20,24 +18,24 @@ export default function Slider() {
       equipments: [],
       tags: [],
     };
-  function Navigate(){
-    
-    const data = require('../../datas/destination.json');
-    const navigate = useNavigate();
-
-    useEffect(() => {
-      if(!data.id) {
-        navigate("/error", {replace: true});
-      }      
-    })
-  }
-
     for( let i = 0; i < data.length; i++ ){
       if(filter.id === data[i].id) {
         dataFiltered = data[i];
+      } else {
+        RedirectionError();
       }
     }
-  
+
+    function RedirectionError(){
+      const navigate = useNavigate();
+
+      useEffect(() => {
+        if(filter.id !== dataFiltered.id){
+          navigate("/error", {replace: true});
+        }
+      }, [navigate])
+    } 
+
     function Equipments(dataArray){
       return(<ul>
         {dataArray.map((data, index) => 
