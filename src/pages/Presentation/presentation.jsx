@@ -18,6 +18,7 @@ export default function Slider() {
       equipments: [],
       tags: [],
     };
+    
     for( let i = 0; i < data.length; i++ ){
       if(filter.id === data[i].id) {
         dataFiltered = data[i];
