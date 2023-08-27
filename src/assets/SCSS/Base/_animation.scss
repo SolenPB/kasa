@@ -1,0 +1,14 @@
+.animation {
+    &__down{
+        animation: textDown 1000ms forwards ease-in-out ;
+        transition: all 1000ms;
+    }
+}
+@keyframes textDown{
+    0%{
+        transform: height(0)
+    }
+    100%{
+        transform: height(100%);
+    }
+}

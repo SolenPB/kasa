@@ -316,7 +316,7 @@ body {
   margin: 18px 35px 0 0;
   cursor: pointer;
   transform: rotate(-180deg);
-  transform-origin: center 7px;
+  transform-origin: center;
   transition: transform 200ms ease-in-out;
 }
 
@@ -453,6 +453,7 @@ body {
 
 .info {
   width: 582px;
+  height: 52px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -474,6 +475,7 @@ body {
 }
 .info__dropdown__text {
   width: 100%;
+  height: 52px;
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 0 0 10px 10px;
@@ -485,6 +487,10 @@ body {
 
 .equipments {
   list-style-type: none;
+}
+
+.opened {
+  border-radius: 10px 10px 0 0;
 }
 
 @media screen and (max-width: 375px) {
@@ -545,6 +551,19 @@ body {
     width: 335px;
     margin: 0;
     margin: 10px 0 10px 20px;
+  }
+}
+.animation__down {
+  animation: textDown 1000ms forwards ease-in-out;
+  transition: all 1000ms;
+}
+
+@keyframes textDown {
+  0% {
+    transform: height(0);
+  }
+  100% {
+    transform: height(100%);
   }
 }
 
