@@ -162,13 +162,15 @@
             &__btnScroll svg{
                 width: 24px;
                 height: 24px;
-            }
-            &__btnScroll{
-                width: 24px;
-                height: 24px;
+                bottom: 50px;
             }
             &__previous{
-                right: 150px;
+                left: 30px;
+                bottom: 12px;
+            }
+            &__next{
+                right: 40px;
+                bottom: 10px;
             }
             &__counter{
                 display: none;
@@ -177,31 +179,64 @@
                 height: 255px;
                 margin: 0;
                 margin-right: 10px;
+                border-radius: 10px;
             }
         }
     }
     .summary{
         width: 355px;
         flex-direction: column;
-        &__titleTags{
-            width: 100%;
-            margin: 0;
-            margin: 20px 0 0 25px;
-            &__location{
-                font-size: 18px;
-            }
-            &__city{
-                font-size: 14px;
-            }
-            &__tags{
-                width: 100%;
-            }
+    }
+    .titleTags{
+        width: 100%;
+        margin: 0;
+        margin: 20px 0 0 25px;
+        &__location{
+            font-size: 18px;
         }
-        &__hostRating{
+        &__city{
+            font-size: 14px;
+        }
+        &__tags{
             width: 100%;
-            margin-left: 28px;
+            align-items: flex-start;
+            flex-direction: row;
+            &__tagElement{
+                width: 40%;
+                font-size: 10px;
+                padding: 0;
+                border-radius: 10px;
+            }
         }
     }
+    .hostRating{
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0;
+        margin-left: 20px;
+        &__host{
+            width: 38%;
+            &__hostName{
+                font-size: 12px;
+            }
+            &__hostPicture{
+                width: 24%;
+                height: 32px;
+                margin-left: 10px;
+            }
+        }
+        &__rating{
+            width: 40%;
+            align-items: center;
+            margin: 0;
+        }
+        &__rating svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    
     .details{
         width: 335px;
         flex-direction: column;
@@ -211,6 +246,10 @@
         width: 335px;
         margin: 0;
         margin: 10px 0 10px 20px;
+        &__dropdown__title{
+            height: 35px;
+            font-size: 13px;
+        }
     }
 }
 

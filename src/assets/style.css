@@ -500,13 +500,15 @@ body {
   .slide__carousel__btnScroll svg {
     width: 24px;
     height: 24px;
-  }
-  .slide__carousel__btnScroll {
-    width: 24px;
-    height: 24px;
+    bottom: 50px;
   }
   .slide__carousel__previous {
-    right: 150px;
+    left: 30px;
+    bottom: 12px;
+  }
+  .slide__carousel__next {
+    right: 40px;
+    bottom: 10px;
   }
   .slide__carousel__counter {
     display: none;
@@ -515,28 +517,60 @@ body {
     height: 255px;
     margin: 0;
     margin-right: 10px;
+    border-radius: 10px;
   }
   .summary {
     width: 355px;
     flex-direction: column;
   }
-  .summary__titleTags {
+  .titleTags {
     width: 100%;
     margin: 0;
     margin: 20px 0 0 25px;
   }
-  .summary__titleTags__location {
+  .titleTags__location {
     font-size: 18px;
   }
-  .summary__titleTags__city {
+  .titleTags__city {
     font-size: 14px;
   }
-  .summary__titleTags__tags {
+  .titleTags__tags {
     width: 100%;
+    align-items: flex-start;
+    flex-direction: row;
   }
-  .summary__hostRating {
+  .titleTags__tags__tagElement {
+    width: 40%;
+    font-size: 10px;
+    padding: 0;
+    border-radius: 10px;
+  }
+  .hostRating {
     width: 100%;
-    margin-left: 28px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: 20px;
+  }
+  .hostRating__host {
+    width: 38%;
+  }
+  .hostRating__host__hostName {
+    font-size: 12px;
+  }
+  .hostRating__host__hostPicture {
+    width: 24%;
+    height: 32px;
+    margin-left: 10px;
+  }
+  .hostRating__rating {
+    width: 40%;
+    align-items: center;
+    margin: 0;
+  }
+  .hostRating__rating svg {
+    width: 18px;
+    height: 18px;
   }
   .details {
     width: 335px;
@@ -547,6 +581,10 @@ body {
     width: 335px;
     margin: 0;
     margin: 10px 0 10px 20px;
+  }
+  .info__dropdown__title {
+    height: 35px;
+    font-size: 13px;
   }
 }
 .animation__down {
