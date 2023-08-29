@@ -288,7 +288,6 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1023px;
-  background-color: #ff6060;
   color: white;
   border-radius: 5px;
 }
@@ -453,9 +452,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 582px;
-  background-color: #ff6060;
-  color: white;
-  border-radius: 10px;
   margin: 0 20px 0 57px;
 }
 .info__dropdown {
@@ -468,6 +464,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
   padding-left: 20px;
 }
 .info__dropdown__text {
@@ -591,7 +590,10 @@ body {
 }
 .animation__down {
   animation: textDown 300ms forwards ease-in-out;
-  transition: all 300ms;
+  transform-origin: top;
+}
+.animation__up {
+  animation: textUp 1000ms forwards ease-in-out;
   transform-origin: top;
 }
 
@@ -601,6 +603,14 @@ body {
   }
   100% {
     transform: scaleY(100%);
+  }
+}
+@keyframes textUp {
+  0% {
+    transform: scaleY(100%);
+  }
+  100% {
+    transform: scaleY(0);
   }
 }
 
