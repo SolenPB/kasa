@@ -554,6 +554,7 @@ body {
   }
   .hostRating__host {
     width: 38%;
+    margin-right: 20px;
   }
   .hostRating__host__hostName {
     font-size: 12px;
@@ -561,7 +562,6 @@ body {
   .hostRating__host__hostPicture {
     width: 24%;
     height: 32px;
-    margin-left: 10px;
   }
   .hostRating__rating {
     width: 40%;

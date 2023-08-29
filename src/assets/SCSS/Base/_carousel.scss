@@ -217,13 +217,13 @@
         margin-left: 20px;
         &__host{
             width: 38%;
+            margin-right: 20px ;
             &__hostName{
                 font-size: 12px;
             }
             &__hostPicture{
                 width: 24%;
                 height: 32px;
-                margin-left: 10px;
             }
         }
         &__rating{
