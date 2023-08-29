@@ -381,31 +381,33 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.summary__titleTags {
+
+.titleTags {
   width: 830px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin: 30px 0 20px 55px;
 }
-.summary__titleTags__location {
+.titleTags__location {
   font-size: 36px;
   margin: 0;
 }
-.summary__titleTags__city {
+.titleTags__city {
   margin-top: 10px;
   font-size: 18px;
 }
-.summary__titleTags__tags {
+.titleTags__tags {
   display: flex;
   align-items: center;
 }
-.summary__titleTags__tags__tagElement {
+.titleTags__tags__tagElement {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 11%;
+  width: 20%;
   height: 25px;
+  font-size: 14px;
   background-color: #ff6060;
   color: white;
   margin: 20px 20px 20px 0;
@@ -413,38 +415,33 @@ body {
   border: 1px solid #ff6060;
   border-radius: 20px;
 }
-.summary__hostRating {
+
+.hostRating {
   display: flex;
   flex-direction: column;
   width: 170px;
   margin-top: 30px;
 }
-.summary__hostRating__host {
+.hostRating__host {
   width: 167px;
   height: 64px;
   display: flex;
   align-items: center;
 }
-.summary__hostRating__host__hostName {
+.hostRating__host__hostName {
   margin-right: 10px;
 }
-.summary__hostRating__host__hostPicture {
+.hostRating__host__hostPicture {
   width: 64px;
   height: 64px;
   object-fit: cover;
   border-radius: 35px;
 }
-.summary__hostRating__rating {
+.hostRating__rating {
   display: flex;
   flex-direction: row;
   width: 500px;
   margin-top: 20px;
-}
-.summary__hostRating__rating__rating-star {
-  display: flex;
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
 }
 
 .details {

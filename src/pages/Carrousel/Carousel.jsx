@@ -68,11 +68,11 @@ export default function Slider() {
   
     return (
 
-    <div className="summary__hostRating__rating">
+    <div className="hostRating__rating">
       {note.map((data, index) =>
         { 
   ;        return(
-          <span key={index} className="summary__hostRating__rating__rating-star">
+          <span key={index}>
             {data}
           </span>
         )}
@@ -87,17 +87,17 @@ export default function Slider() {
       <Slideshow pictures={dataFiltered.pictures}/>
 
       <div className="summary">
-        <div className="summary__titleTags">
+        <div className="titleTags">
           
-            <h2 className="summary__titleTags__location">{dataFiltered.title}</h2>
-            <span className="summary__titleTags__city">{dataFiltered.location} </span>
+            <h2 className="titleTags__location">{dataFiltered.title}</h2>
+            <span className="titleTags__city">{dataFiltered.location} </span>
           
 
-          <div className="summary__titleTags__tags">
+          <div className="titleTags__tags">
           {dataFiltered.tags.map((data, index) =>
             {
               return(
-                <span key={index} className="summary__titleTags__tags__tagElement">
+                <span key={index} className="titleTags__tags__tagElement">
                   {data}
                 </span>
               )
@@ -107,13 +107,13 @@ export default function Slider() {
           </div>
         </div>
 
-        <div className="summary__hostRating">
-        <div className="summary__hostRating__host">
-            <span className="summary__hostRating__host__hostName">{dataFiltered.host.name}</span>
-            <img src={dataFiltered.host.picture} alt="" className="summary__hostRating__host__hostPicture"/>
+        <div className="hostRating">
+        <div className="hostRating__host">
+            <span className="hostRating__host__hostName">{dataFiltered.host.name}</span>
+            <img src={dataFiltered.host.picture} alt="" className="hostRating__host__hostPicture"/>
           </div>
 
-          <div className="summary__hostRating__rating">
+          <div className="hostRating__rating">
             <RatingScale rating={dataFiltered.rating}/>
           </div>
         </div>
