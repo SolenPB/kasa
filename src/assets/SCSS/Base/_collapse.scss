@@ -17,6 +17,10 @@
             cursor: pointer;
             transition: all 200ms ease-in-out;
         }
+        &__inactive svg {
+            position: relative;
+            top: -3px;
+        }
         &__active{
             width: 32px;
             height: 24px;
@@ -31,14 +35,22 @@
             transform-origin: center;
             transition: transform 200ms ease-in-out;
         }
+        &__active svg{
+            position: relative;
+            top: -2px;
+        }
     }
 }
-.chevronUp svg{
-    position: relative;
-    height: 14px;
-    bottom: 3px;
-}
-.chevronUp{
-    height: 24px;
+@media screen and (max-width: 375px){
+    .chevronUp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18px;
+    }
+    .chevronUp svg{
+        width: 18px;
+        height: 14px;
+    }
 }
 

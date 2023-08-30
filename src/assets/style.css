@@ -303,6 +303,10 @@ body {
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
+.listButton__actionButton__inactive svg {
+  position: relative;
+  top: -3px;
+}
 .listButton__actionButton__active {
   width: 32px;
   height: 24px;
@@ -317,17 +321,23 @@ body {
   transform-origin: center;
   transition: transform 200ms ease-in-out;
 }
-
-.chevronUp svg {
+.listButton__actionButton__active svg {
   position: relative;
-  height: 14px;
-  bottom: 3px;
+  top: -2px;
 }
 
-.chevronUp {
-  height: 24px;
+@media screen and (max-width: 375px) {
+  .chevronUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+  }
+  .chevronUp svg {
+    width: 18px;
+    height: 14px;
+  }
 }
-
 .slide {
   width: 1440px;
   display: flex;
@@ -490,10 +500,10 @@ body {
 
 @media screen and (max-width: 375px) {
   .slide {
-    width: 408px;
+    width: 100%;
   }
   .slide__carousel {
-    width: 95%;
+    width: 100%;
     height: 300px;
   }
   .slide__carousel__btnScroll svg {
@@ -528,7 +538,7 @@ body {
     margin-left: 25px;
   }
   .titleTags__location {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: normal;
   }
   .titleTags__city {
@@ -541,7 +551,7 @@ body {
   }
   .titleTags__tags__tagElement {
     width: 40%;
-    font-size: 10px;
+    font-size: 12px;
     padding: 0;
     border-radius: 10px;
   }
@@ -554,9 +564,10 @@ body {
   }
   .hostRating__host {
     width: 38%;
+    margin-right: 10px;
   }
   .hostRating__host__hostName {
-    font-size: 12px;
+    font-size: 14px;
   }
   .hostRating__host__hostPicture {
     width: 24%;
