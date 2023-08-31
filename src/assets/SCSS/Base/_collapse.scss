@@ -11,15 +11,18 @@
             border: none;
             background-color: #ff6060;
             color: white;
+            border: solid 1px black;
             font-size: 25px;
             border-radius: 5px;
             margin-right: 35px;
             cursor: pointer;
             transition: all 200ms ease-in-out;
+            transform-origin: center;
         }
         &__inactive svg {
             position: relative;
-            top: -3px;
+            bottom: 7px;
+            right: 1px;
         }
         &__active{
             width: 32px;
@@ -27,6 +30,7 @@
             border: none;
             background-color: #ff6060;
             color: white;
+            border: solid 1px black;
             font-size: 25px;
             border-radius: 5px;
             margin: 18px 35px 0 0;
@@ -37,7 +41,8 @@
         }
         &__active svg{
             position: relative;
-            top: -2px;
+            bottom: 7px;
+            right: 1px;
         }
     }
 }

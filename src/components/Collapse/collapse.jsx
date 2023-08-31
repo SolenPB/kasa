@@ -23,7 +23,7 @@ function Collapse(props){
         {divParent : "info",
         divEnfant : "info__dropdown__title",
         divEnfant1 : "info__dropdown__text animation__down",
-        divEnfant2: "animation__down",
+        divEnfant2: "animation__up",
         }
     ) : (
         {divParent : "aboutMenu",
