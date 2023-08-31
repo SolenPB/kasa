@@ -467,6 +467,7 @@ body {
 .info__dropdown {
   display: flex;
   align-items: center;
+  visibility: hidden;
 }
 .info__dropdown__title {
   width: 100%;
@@ -484,7 +485,6 @@ body {
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 0 0 10px 10px;
-  padding-left: 20px;
 }
 .info__dropdown__text ul {
   padding: 0;

@@ -10,11 +10,11 @@ function Home() {
 return(<>
     <div className="gallery">
            {element.map((data, index) => {
-             return <>
+             return( 
               <Link key={index} className="gallery__navCard" to={data.id} >
                 <Card title={data.title} picture={data.cover} />
               </Link>
-             </>
+             )
            })}
     </div>
     </>

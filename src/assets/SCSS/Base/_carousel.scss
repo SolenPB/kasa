@@ -123,6 +123,7 @@
     &__dropdown{
         display: flex;
         align-items: center;
+        visibility: hidden;
         &__title{
             width: 100%;
             height: 52px;
@@ -138,8 +139,7 @@
             width: 100%;
             background-color: #f6f6f6;
             color: #ff6060;
-            border-radius: 0 0 10px 10px;
-            padding-left: 20px;       
+            border-radius: 0 0 10px 10px; 
         }
         &__text ul{
             padding: 0;
