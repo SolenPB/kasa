@@ -204,10 +204,6 @@ body {
   padding: 20px;
 }
 
-.footer {
-  margin-top: 30px;
-}
-
 @media screen and (max-width: 375px) {
   .aboutTitle {
     width: 95%;
@@ -302,13 +298,10 @@ body {
   border-radius: 5px;
   margin-right: 35px;
   cursor: pointer;
-  transition: all 200ms ease-in-out;
-  transform-origin: center;
 }
 .listButton__actionButton__inactive svg {
-  position: relative;
-  bottom: 7px;
-  right: 1px;
+  transition: all 200ms ease-in-out;
+  transform-origin: center;
 }
 .listButton__actionButton__active {
   width: 32px;
@@ -321,14 +314,14 @@ body {
   border-radius: 5px;
   margin: 18px 35px 0 0;
   cursor: pointer;
-  transform: rotate(-180deg);
-  transform-origin: center;
-  transition: transform 200ms ease-in-out;
 }
 .listButton__actionButton__active svg {
   position: relative;
   bottom: 7px;
   right: 1px;
+  transform: rotate(-180deg);
+  transform-origin: center;
+  transition: transform 200ms ease-in-out;
 }
 
 @media screen and (max-width: 375px) {
@@ -348,7 +341,6 @@ body {
   display: flex;
   flex-direction: column;
   color: #ff6060;
-  margin-bottom: 70px;
 }
 .slide__carousel {
   width: 100%;
@@ -461,18 +453,19 @@ body {
 .details {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
 }
 
 .info {
   display: flex;
   flex-wrap: wrap;
   width: 582px;
+  height: 100%;
   margin: 0 20px 0 57px;
 }
 .info__dropdown {
   display: flex;
   align-items: center;
-  visibility: hidden;
 }
 .info__dropdown__title {
   width: 100%;
@@ -605,28 +598,39 @@ body {
   }
 }
 .animation__down {
-  animation: textDown 300ms forwards ease-in-out;
+  animation: boxDown 300ms forwards ease-in-out;
   transform-origin: top;
 }
 .animation__up {
-  animation: textUp 1000ms forwards ease-in-out;
+  animation: boxUp 400ms forwards ease-in-out;
   transform-origin: top;
 }
+.animation .text__up {
+  animation: textUp 400ms forwards ease-in-out;
+}
 
-@keyframes textDown {
+@keyframes boxDown {
   0% {
     transform: scaleY(0);
   }
   100% {
     transform: scaleY(100%);
+  }
+}
+@keyframes boxUp {
+  0% {
+    transform: scaleY(100%);
+  }
+  100% {
+    transform: scaleY(0);
   }
 }
 @keyframes textUp {
   0% {
-    transform: scaleY(100%);
+    transform: translateY(100%);
   }
   100% {
-    transform: scaleY(0);
+    transform: translateY(0);
   }
 }
 

@@ -23,7 +23,8 @@ function Collapse(props){
         {divParent : "info",
         divEnfant : "info__dropdown__title",
         divEnfant1 : "info__dropdown__text animation__down",
-        divEnfant2: "animation__up",
+        divEnfant2: "info__dropdown__text animation__up",
+        divEnfant3: "text__up",
         }
     ) : (
         {divParent : "aboutMenu",
@@ -33,7 +34,7 @@ function Collapse(props){
         }
     )
     return(
-        <div>
+        <>
         {isOpenDrop ? (
             <div className={style.divParent}>
                 <div className={style.divEnfant}>
@@ -41,7 +42,7 @@ function Collapse(props){
                     <button className="listButton__actionButton__active" onClick={() => ClosedDrop()}><Up /></button>
                 </div>
                 <div className={style.divEnfant1}>
-                    <span className={style.divEnfant2}>{props.description}</span>
+                    <span className={style.divEnfant3}>{props.description}</span>
                 </div>
             </div>
 
@@ -51,9 +52,12 @@ function Collapse(props){
                     <h2>{props.title}</h2>
                     <button className="listButton__actionButton__inactive" onClick={() => OpenDrop()}><Up /></button>
                 </div>
+                <div className={style.divEnfant2}>
+                    <span className={style.divEnfant2}>{props.description}</span>
+                </div>
             </div>
         )}
-        </div>
+        </>
  )       
 }
 

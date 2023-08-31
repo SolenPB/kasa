@@ -15,14 +15,11 @@
             font-size: 25px;
             border-radius: 5px;
             margin-right: 35px;
-            cursor: pointer;
-            transition: all 200ms ease-in-out;
-            transform-origin: center;
+            cursor: pointer;         
         }
         &__inactive svg {
-            position: relative;
-            bottom: 7px;
-            right: 1px;
+            transition: all 200ms ease-in-out;
+            transform-origin: center;
         }
         &__active{
             width: 32px;
@@ -34,15 +31,15 @@
             font-size: 25px;
             border-radius: 5px;
             margin: 18px 35px 0 0;
-            cursor: pointer;
-            transform: rotate(-180deg);
-            transform-origin: center;
-            transition: transform 200ms ease-in-out;
+            cursor: pointer;           
         }
         &__active svg{
             position: relative;
             bottom: 7px;
             right: 1px;
+            transform: rotate(-180deg);
+            transform-origin: center;
+            transition: transform 200ms ease-in-out;
         }
     }
 }
