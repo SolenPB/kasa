@@ -6,7 +6,7 @@ import About from './pages/About/about';
 import Header from './components/Header/header';
 import Error from './components/Header/Error/error';
 import Carousel from './pages/Carrousel/Carousel';
-import './assets/style.css';
+import './styles/style.css';
 import Slider from './pages/Carrousel/Carousel';
 import Footer from './components/Footer/footer';
 
