@@ -456,9 +456,9 @@ body {
 
 .info {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 582px;
-  margin: 0 20px 50px 57px;
+  margin: 0 20px 30px 57px;
 }
 .info__dropdown {
   display: flex;
@@ -602,6 +602,8 @@ body {
 .animation__down {
   animation: boxDown 300ms forwards ease-in-out;
   transform-origin: top;
+  border-radius: 0 0 10px 10px;
+  padding-left: 20px;
 }
 .animation__up {
   animation: boxUp 300ms forwards ease-in-out;

@@ -2,6 +2,8 @@
     &__down{
         animation: boxDown 300ms forwards ease-in-out ;
         transform-origin: top;
+        border-radius: 0 0 10px 10px;
+        padding-left: 20px; 
     }
     &__up{
         animation: boxUp 300ms forwards ease-in-out;

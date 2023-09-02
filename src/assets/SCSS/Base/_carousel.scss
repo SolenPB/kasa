@@ -116,9 +116,9 @@
 }
 .info{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 582px;
-    margin:0 20px 50px 57px;
+    margin:0 20px 30px 57px;
     &__dropdown{
         display: flex;
         align-items: center;

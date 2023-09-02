@@ -49,7 +49,7 @@ function Collapse(props){
             }
         )
     }
-    console.log(style.divEnfant2)
+    
     return(
         <>
         {isOpenDrop ? (
