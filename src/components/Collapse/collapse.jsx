@@ -4,34 +4,57 @@ import { useParams } from "react-router-dom";
 
 function Collapse(props){
     const[isOpenDrop, setIsOpenDrop] = useState(false);
+    const[isLoaded, setIsLoaded] = useState(true);
 //Fonction pour les ouvertures 
     function OpenDrop(){
         setIsOpenDrop(true);
+        setIsLoaded(false);
     }
 //Fonction pour les fermetures 
     function ClosedDrop(){
         setIsOpenDrop(false);
+        setIsLoaded(false);
     }
 
-    useEffect(() => {
-        OpenDrop();
-        ClosedDrop();
-    }, [])
+   // useEffect(() => {
+     //   OpenDrop();
+      //  ClosedDrop();
+    //}, [])
 
     const pages = useParams();
-    const style = pages.id ? (
-        {divParent : "info",
-        divEnfant : "info__dropdown__title",
-        divEnfant1 : "info__dropdown__text animation__down",
-        divEnfant2: "info__dropdown__text animation__up",
-        }
-    ) : (
-        {divParent : "aboutMenu",
-        divEnfant : "aboutMenu__dropdown__title",
-        divEnfant1 : "aboutMenu__dropdown__text animation__down",
-        divEnfant2: "aboutMenu__dropdown__text animation__up",
-        }
-    )
+
+    let style = "";
+
+    if(isLoaded){
+         style = pages.id ? (
+            {divParent : "info",
+            divEnfant : "info__dropdown__title",
+            divEnfant1 : "info__dropdown__text animation__down",
+            divEnfant2: "info__dropdown__text hiddenText",
+            }
+        ) : (
+            {divParent : "aboutMenu",
+            divEnfant : "aboutMenu__dropdown__title",
+            divEnfant1 : "aboutMenu__dropdown__text animation__down",
+            divEnfant2: "aboutMenu__dropdown__text hiddenText",
+            }
+        )
+    } else {
+        style = pages.id ? (
+            {divParent : "info",
+            divEnfant : "info__dropdown__title",
+            divEnfant1 : "info__dropdown__text animation__down",
+            divEnfant2: "info__dropdown__text animation__up",
+            }
+        ) : (
+            {divParent : "aboutMenu",
+            divEnfant : "aboutMenu__dropdown__title",
+            divEnfant1 : "aboutMenu__dropdown__text animation__down",
+            divEnfant2: "aboutMenu__dropdown__text animation__up",
+            }
+        )
+    }
+    console.log(style.divEnfant2)
     return(
         <>
         {isOpenDrop ? (
@@ -41,7 +64,7 @@ function Collapse(props){
                     <button className="listButton__actionButton__active" onClick={() => ClosedDrop()}><Up /></button>
                 </div>
                 <div className={style.divEnfant1}>
-                    <span className={style.divEnfant2}>{props.description}</span>
+                    <span>{props.description}</span>
                 </div>
             </div>
 
@@ -52,7 +75,7 @@ function Collapse(props){
                     <button className="listButton__actionButton__inactive" onClick={() => OpenDrop()}><Up /></button>
                 </div>
                 <div className={style.divEnfant2}>
-                    <span className={`${style.divEnfant2} hiddenText`}>{props.description}</span>
+                    <span>{props.description}</span>
                 </div>
             </div>
         )}

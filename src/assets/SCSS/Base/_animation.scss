@@ -4,14 +4,10 @@
         transform-origin: top;
     }
     &__up{
-        animation: boxUp 1000ms forwards ease-in-out;
-        transform-origin: top;
+        animation: boxUp 300ms forwards ease-in-out;
+        transform-origin: top; 
     }
-//.text{
-   // &__up{
-     //   animation: textUp 400ms forwards ease-in-out;
-   // }
-//}
+
 }
 @keyframes boxDown{
     0%{
@@ -27,15 +23,7 @@
     }
     100%{
         transform: scaleY(0%);
+        height: 0;
     }
 
 }
-@keyframes textUp{
-    0%{
-        transform: translateY(100%)
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
-
