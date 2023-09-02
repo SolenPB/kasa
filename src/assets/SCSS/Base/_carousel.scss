@@ -131,6 +131,7 @@
             align-items: center;
             background-color: #ff6060;
             color: white;
+            border-radius: 10px;
             padding-left: 20px;
         }
         &__text{
@@ -148,7 +149,7 @@
 .equipments{
     list-style-type: none;
 }
-.opened{
+.titleOpened{
     border-radius: 10px 10px 0 0;
 }
 .hiddenText{
