@@ -1,5 +1,5 @@
 import Up from "../../assets/chevron-up-down";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 
 function Collapse(props){
@@ -15,11 +15,6 @@ function Collapse(props){
         setIsOpenDrop(false);
         setIsLoaded(false);
     }
-
-   // useEffect(() => {
-     //   OpenDrop();
-      //  ClosedDrop();
-    //}, [])
 
     const pages = useParams();
 
