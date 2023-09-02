@@ -28,25 +28,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #ff6060;
-            color: white;
+            padding-left: 20px;
         }
         &__text{
             width: 100%;
             background-color: #f6f6f6;
             color: #ff6060;
             border-radius: 0 0 10px 10px;
-            padding: 10px;
-            //transition: all 2000ms;
+            padding:20px;
         }
     }
-}
-.titleOpened{
-    border-radius: 10px 10px 0 0;
-}
-.titleClosed{
-    border-radius: 10px;
-    height: 52px;
 }
 @media screen and (max-width: 375px){
     .aboutTitle{

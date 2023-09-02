@@ -49,12 +49,12 @@ function Collapse(props){
 
         ) : (
             <div className={style.divParent}>
-                <div className={`${style.divEnfant} titleClosed`}>
+                <div className={style.divEnfant}>
                     <h2>{props.title}</h2>
                     <button className="listButton__actionButton__inactive" onClick={() => OpenDrop()}><Up /></button>
                 </div>
-                <div className={style.divEnfant1}>
-                    <span className={style.divEnfant3}>{props.description}</span>
+                <div className={style.divEnfant2}>
+                    <span className={style.divEnfant2}>{props.description}</span>
                 </div>
             </div>
         )}
