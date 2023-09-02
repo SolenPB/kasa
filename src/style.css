@@ -293,7 +293,6 @@ body {
   border: none;
   background-color: #ff6060;
   color: white;
-  border: solid 1px black;
   font-size: 25px;
   border-radius: 5px;
   margin-right: 35px;
@@ -309,7 +308,6 @@ body {
   border: none;
   background-color: #ff6060;
   color: white;
-  border: solid 1px black;
   font-size: 25px;
   border-radius: 5px;
   margin: 18px 35px 0 0;
@@ -461,7 +459,7 @@ body {
   flex-wrap: wrap;
   width: 582px;
   height: 100%;
-  margin: 0 20px 0 57px;
+  margin: 0 20px 30px 57px;
 }
 .info__dropdown {
   display: flex;
@@ -494,6 +492,10 @@ body {
 
 .opened {
   border-radius: 10px 10px 0 0;
+}
+
+.hiddenText {
+  display: none;
 }
 
 @media screen and (max-width: 375px) {

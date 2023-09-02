@@ -119,7 +119,7 @@
     flex-wrap: wrap;
     width: 582px;
     height: 100%;
-    margin:0 20px 0 57px;
+    margin:0 20px 30px 57px;
     &__dropdown{
         display: flex;
         align-items: center;
@@ -150,6 +150,9 @@
 }
 .opened{
     border-radius: 10px 10px 0 0;
+}
+.hiddenText{
+    display: none;
 }     
 
             
@@ -256,4 +259,3 @@
         }
     }
 }
-
