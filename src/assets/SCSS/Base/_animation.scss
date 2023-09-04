@@ -3,7 +3,7 @@
         animation: boxDown 300ms forwards ease-in-out ;
         transform-origin: top;
         border-radius: 0 0 10px 10px;
-        padding-left: 20px; 
+        padding: 20px 0 20px 20px; 
     }
     &__up{
         animation: boxUp 300ms forwards ease-in-out;
@@ -22,6 +22,7 @@
 @keyframes boxUp{
     0%{
         transform: scaleY(100%);
+        padding: 20px 0 20px 20px; 
     }
     100%{
         transform: scaleY(0%);
