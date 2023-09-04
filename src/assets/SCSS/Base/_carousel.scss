@@ -1,5 +1,5 @@
 .slide{
-    width: 1440px;
+    width: 1400px;
     display: flex;
     flex-direction: column;
     color: #ff6060;
@@ -30,7 +30,6 @@
             height: 100%;
             object-fit: cover;
             border-radius: 15px;
-            margin-right: 50px;
             z-index: 3;
         }
         &__counter{
@@ -72,7 +71,6 @@
             align-items: center;
             width: 20%;
             height: 25px;
-            font-size: 14px;
             background-color: #ff6060;
             color: white;
             margin: 20px 20px 20px 0;
@@ -121,7 +119,6 @@
     margin:0 20px 30px 57px;
     &__dropdown{
         display: flex;
-        align-items: center;
         &__title{
             width: 100%;
             height: 52px;
@@ -137,8 +134,7 @@
             width: 100%;
             background-color: #f6f6f6;
             color: #ff6060;
-            border-radius: 0 0 10px 10px;
-            padding-left: 20px; 
+            border-radius: 0 0 10px 10px; 
         }
         &__text ul{
             padding: 0;
