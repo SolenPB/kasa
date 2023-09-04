@@ -181,8 +181,9 @@ body {
 .aboutMenu {
   display: flex;
   flex-direction: column;
-  width: 1023px;
+  width: 1003px;
   height: 100%;
+  margin: 0 0 30px 35px;
 }
 .aboutMenu__dropdown {
   display: flex;
@@ -194,6 +195,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
   padding-left: 20px;
 }
 .aboutMenu__dropdown__text {
@@ -201,7 +205,10 @@ body {
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 0 0 10px 10px;
-  padding: 20px;
+}
+
+.hiddenText {
+  display: none;
 }
 
 @media screen and (max-width: 375px) {
