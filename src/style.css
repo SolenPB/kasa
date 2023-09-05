@@ -226,6 +226,13 @@ body {
   .aboutMenu {
     width: 355px;
   }
+  .aboutMenu__dropdown__title {
+    width: 85%;
+    font-size: 13px;
+  }
+  .aboutMenu__dropdown__text {
+    width: 85%;
+  }
 }
 .footer {
   width: 100%;

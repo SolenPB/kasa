@@ -59,5 +59,12 @@
     }
     .aboutMenu{
         width: 355px;
+        &__dropdown__title{
+            width: 85%;
+            font-size: 13px;
+        }
+        &__dropdown__text{
+            width: 85%;
+        }
     }
 }
