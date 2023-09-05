@@ -601,8 +601,10 @@ body {
     margin: 10px 0 10px 20px;
   }
   .info__dropdown__title {
+    width: 95%;
     height: 35px;
     font-size: 13px;
+    margin: 0;
   }
   .info__dropdown__title h2 {
     font-weight: normal;

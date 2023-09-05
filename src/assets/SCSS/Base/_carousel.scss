@@ -247,8 +247,10 @@
         margin: 0;
         margin: 10px 0 10px 20px;
         &__dropdown__title{
+            width: 95%;
             height: 35px;
             font-size: 13px;
+            margin: 0;
         }
         &__dropdown__title h2{
             font-weight: normal;
