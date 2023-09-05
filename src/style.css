@@ -607,11 +607,12 @@ body {
   animation: boxDown 300ms forwards ease-in-out;
   transform-origin: top;
   border-radius: 0 0 10px 10px;
-  padding: 20px 0 20px 20px;
+  padding-left: 20px;
 }
 .animation__up {
   animation: boxUp 300ms forwards ease-in-out;
   transform-origin: top;
+  padding-left: 20px;
 }
 
 @keyframes boxDown {
@@ -620,6 +621,7 @@ body {
   }
   100% {
     transform: scaleY(100%);
+    padding: 20px 0 20px 20px;
   }
 }
 @keyframes boxUp {
