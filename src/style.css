@@ -271,6 +271,7 @@ body {
 @media screen and (max-width: 375px) {
   .error {
     margin: 0;
+    margin-bottom: 27px;
   }
   .error__title {
     width: 55%;
