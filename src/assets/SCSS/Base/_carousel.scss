@@ -240,6 +240,7 @@
     .details{
         width: 335px;
         flex-direction: column;
+        margin-bottom: 20px;
     }
     .info{
         width: 335px;
@@ -253,6 +254,9 @@
         }
         &__dropdown__title h2{
             font-weight: normal;
+        }
+        &__dropdown__text{
+            width: 90%;
         }
     }
 }

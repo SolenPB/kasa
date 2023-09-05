@@ -593,6 +593,7 @@ body {
   .details {
     width: 335px;
     flex-direction: column;
+    margin-bottom: 20px;
   }
   .info {
     width: 335px;
@@ -607,6 +608,9 @@ body {
   }
   .info__dropdown__title h2 {
     font-weight: normal;
+  }
+  .info__dropdown__text {
+    width: 90%;
   }
 }
 .animation__down {
