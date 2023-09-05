@@ -525,7 +525,7 @@ body {
     bottom: 12px;
   }
   .slide__carousel__next {
-    right: 40px;
+    right: 30px;
     bottom: 10px;
   }
   .slide__carousel__counter {
@@ -534,7 +534,6 @@ body {
   .slide__carousel__carouselPictures {
     height: 255px;
     margin: 0;
-    margin-right: 10px;
     border-radius: 10px;
   }
   .summary {
@@ -601,7 +600,7 @@ body {
     margin: 10px 0 10px 20px;
   }
   .info__dropdown__title {
-    width: 95%;
+    width: 90%;
     height: 35px;
     font-size: 13px;
     margin: 0;
