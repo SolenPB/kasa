@@ -364,7 +364,7 @@ body {
   cursor: pointer;
 }
 .slide__carousel__next {
-  right: 150px;
+  right: 100px;
 }
 .slide__carousel__previous {
   left: 80px;
