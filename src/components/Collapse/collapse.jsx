@@ -62,7 +62,6 @@ function Collapse(props){
                     <span>{props.description}</span>
                 </div>
             </div>
-
         ) : (
             <div className={style.divParent}>
                 <div className={style.divEnfant}>
