@@ -214,7 +214,7 @@ body {
 
 @media screen and (max-width: 375px) {
   .aboutTitle {
-    width: 95%;
+    width: 90%;
     height: 111px;
     margin-top: 20px;
   }
@@ -224,7 +224,10 @@ body {
     border-radius: 10px;
   }
   .aboutMenu {
-    width: 355px;
+    width: 90%;
+    margin: 0;
+    margin-bottom: 30px;
+    align-items: center;
   }
   .aboutMenu__dropdown__title {
     width: 85%;
