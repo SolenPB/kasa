@@ -9,12 +9,16 @@
     background-color: black;
     padding-top: 20px;
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 768px){
     .footer{
         width: 100%;
         &__footerTitle{
-            width: 100px;
+            text-align: center;
+            width: 25%;
             font-size: 12px;
+            @media screen and (max-width: 377px) {
+                width: 30%;
+            }
         }
     }
 }

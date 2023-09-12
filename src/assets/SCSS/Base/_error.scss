@@ -21,7 +21,15 @@
         padding-top: 40px;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 994px) and (min-width: 769px) {
+   .error {
+    &__message{
+        font-size: 30px;
+    }
+   }
+}
+
+@media screen and (max-width: 768px) {
     .error{
         margin: 0;
         margin-bottom: 27px;
@@ -32,8 +40,9 @@
             text-align: center;
         }
         &__message{
-            width: 70%;
-            font-size: 18px;
+            width: 60%;
+            font-size: 20px;
+            font-weight: normal;
             text-align: center;
             margin-top: 70px;
         }

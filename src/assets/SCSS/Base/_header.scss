@@ -1,17 +1,17 @@
 .header {
-    width: 1240px;
+    width: 86.5%;
     height: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0 40px 75px;
+    margin: 20px 0 40px 6%;
     &__navList{
-        width: 300px;
+        width: 30%;
         display: flex;
         justify-content: space-between;
         font-size: 24px;
         &__active{
-        color: #ff6060;
+            color: #ff6060;
         }
         &__inactive{
             color: #ff6060;
@@ -19,11 +19,18 @@
         }
     }
 }
-
-@media screen and (max-width: 375px){
+@media screen and (max-width: 994px) and (min-width: 769px){
     .header{
-        width: 325px;
-        margin: 20px 0 0 20px;
+        margin-left: 7%;
+        &__navList{
+            width: 40%;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .header{
+        width: 85%;
+        margin: 20px 0 0 8%;
         &__navList{
             width: 150px;
             font-size: 12px;
