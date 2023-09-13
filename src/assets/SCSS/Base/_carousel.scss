@@ -184,7 +184,7 @@
         margin-top: 20px;
     }
     .titleTags {
-        width: 60%;
+        width: 50%;
         margin: 0;
         &__tags {
             &__tagElement {
@@ -208,8 +208,8 @@
     .slide{
         width: 100%;
         &__carousel{
-            margin-left: 0.8%;
-            width: 100%;
+            margin: 0;
+            width: 99%;
             height: 300px;
             &__btnScroll svg{
                 width: 24px;

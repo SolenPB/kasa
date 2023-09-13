@@ -168,7 +168,8 @@
 }
 @media screen and (max-width: 768px) and (max-width: 383px) {
   .titleGallery__titleSea {
-    width: 65%;
+    width: 60%;
+    top: 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -616,7 +617,7 @@ body {
     margin-top: 20px;
   }
   .titleTags {
-    width: 60%;
+    width: 50%;
     margin: 0;
   }
   .titleTags__tags__tagElement {
@@ -638,8 +639,8 @@ body {
     width: 100%;
   }
   .slide__carousel {
-    margin-left: 0.8%;
-    width: 100%;
+    margin: 0;
+    width: 99%;
     height: 300px;
   }
   .slide__carousel__btnScroll svg {
