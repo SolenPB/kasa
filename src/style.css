@@ -66,6 +66,7 @@
   z-index: 15;
 }
 .titleGallery__sea {
+  max-width: 1270px;
   width: 87%;
   height: 223px;
   border-radius: 25px;
@@ -87,7 +88,7 @@
   background-color: #f6f6f6;
   border-radius: 25px;
   padding-top: 40px;
-  margin: 70px 0 40px 75px;
+  margin: 70px 0 40px 90px;
 }
 .gallery__navCard {
   width: 28.1%;
