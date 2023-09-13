@@ -270,13 +270,13 @@
         margin-left: 20px;
         &__host{
             width: 38%;
-            margin-right: 10px
-            ;
+            margin-right: 10px;
             &__hostName{
                 font-size: 14px;
             }
             &__hostPicture{
                 width: 24%;
+                border-radius: 30px;
                 height: 32px;
             }
         }

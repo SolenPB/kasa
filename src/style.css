@@ -707,6 +707,7 @@ body {
   }
   .hostRating__host__hostPicture {
     width: 24%;
+    border-radius: 30px;
     height: 32px;
   }
   .hostRating__rating {
